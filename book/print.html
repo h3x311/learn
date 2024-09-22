@@ -1,0 +1,2389 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Note By Dot</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="theme/pagetoc.css">
+        <link rel="stylesheet" href="theme/css/fonts.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">JavaScript</li><li class="chapter-item expanded "><a href="JS/Intro.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="chapter-item expanded "><a href="JS/Basic.html"><strong aria-hidden="true">2.</strong> Basic</a></li><li class="chapter-item expanded "><a href="JS/Type.html"><strong aria-hidden="true">3.</strong> Type</a></li><li class="chapter-item expanded "><a href="JS/Array.html"><strong aria-hidden="true">4.</strong> Array</a></li><li class="chapter-item expanded "><a href="JS/Function.html"><strong aria-hidden="true">5.</strong> Function</a></li><li class="chapter-item expanded "><a href="JS/Object.html"><strong aria-hidden="true">6.</strong> Object</a></li><li class="chapter-item expanded "><a href="JS/async.html"><strong aria-hidden="true">7.</strong> Async</a></li><li class="chapter-item expanded "><a href="JS/MapSet.html"><strong aria-hidden="true">8.</strong> MapSet</a></li><li class="chapter-item expanded "><a href="JS/dom.html"><strong aria-hidden="true">9.</strong> DOM</a></li><li class="chapter-item expanded "><a href="JS/Debounce.html"><strong aria-hidden="true">10.</strong> Debounce</a></li><li class="chapter-item expanded affix "><li class="part-title">React</li><li class="chapter-item expanded "><a href="React/Intro.html"><strong aria-hidden="true">11.</strong> Intro</a></li><li class="chapter-item expanded "><a href="React/Basic.html"><strong aria-hidden="true">12.</strong> Basic</a></li><li class="chapter-item expanded "><a href="React/Design.html"><strong aria-hidden="true">13.</strong> Design</a></li><li class="chapter-item expanded "><a href="React/Hooks.html"><strong aria-hidden="true">14.</strong> Hooks</a></li><li class="chapter-item expanded "><a href="React/API.html"><strong aria-hidden="true">15.</strong> API</a></li><li class="chapter-item expanded "><a href="React/Redux.html"><strong aria-hidden="true">16.</strong> Redux</a></li><li class="chapter-item expanded "><a href="React/UI.html"><strong aria-hidden="true">17.</strong> UI</a></li><li class="chapter-item expanded "><a href="React/CSS.html"><strong aria-hidden="true">18.</strong> CSS</a></li><li class="chapter-item expanded "><a href="React/Other.html"><strong aria-hidden="true">19.</strong> Other</a></li><li class="chapter-item expanded affix "><li class="part-title">NextJs</li><li class="chapter-item expanded "><a href="Nextjs/basic.html"><strong aria-hidden="true">20.</strong> Basic</a></li><li class="chapter-item expanded affix "><li class="part-title">LeetCode</li><li class="chapter-item expanded "><a href="Leetcode/Array.html"><strong aria-hidden="true">21.</strong> Array</a></li><li class="chapter-item expanded "><a href="Leetcode/TwoPointer.html"><strong aria-hidden="true">22.</strong> Two Pointer</a></li><li class="chapter-item expanded "><a href="Leetcode/SlideWindow.html"><strong aria-hidden="true">23.</strong> Slide Window</a></li><li class="chapter-item expanded "><a href="Leetcode/Matrix.html"><strong aria-hidden="true">24.</strong> Matrix</a></li><li class="chapter-item expanded "><a href="Leetcode/Hashmap.html"><strong aria-hidden="true">25.</strong> Hashmap</a></li><li class="chapter-item expanded "><a href="Leetcode/Interval.html"><strong aria-hidden="true">26.</strong> Interval</a></li><li class="chapter-item expanded "><a href="Leetcode/Stack.html"><strong aria-hidden="true">27.</strong> Stack</a></li><li class="chapter-item expanded "><a href="Leetcode/LinkedList.html"><strong aria-hidden="true">28.</strong> LinkedList</a></li><li class="chapter-item expanded "><a href="Leetcode/Tree.html"><strong aria-hidden="true">29.</strong> Tree</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="Python/Array.html"><strong aria-hidden="true">30.</strong> Array</a></li><li class="chapter-item expanded "><a href="Python/string.html"><strong aria-hidden="true">31.</strong> string</a></li><li class="chapter-item expanded "><a href="Python/directory.html"><strong aria-hidden="true">32.</strong> directory</a></li><li class="chapter-item expanded "><a href="Python/iterate.html"><strong aria-hidden="true">33.</strong> iterate</a></li><li class="chapter-item expanded affix "><li class="part-title">Interview</li><li class="chapter-item expanded "><a href="Interview/assignment.html"><strong aria-hidden="true">34.</strong> Assignment</a></li><li class="chapter-item expanded "><a href="Interview/problem.html"><strong aria-hidden="true">35.</strong> Problem</a></li><li class="chapter-item expanded "><a href="Interview/BQ.html"><strong aria-hidden="true">36.</strong> Behavior</a></li><li class="chapter-item expanded "><a href="Interview/job/jobRecord.html"><strong aria-hidden="true">37.</strong> Job Record</a></li><li class="chapter-item expanded "><a href="Interview/job/applyRecord.html"><strong aria-hidden="true">38.</strong> Apply Record</a></li><li class="chapter-item expanded "><a href="Interview/job/resumeRecord.html"><strong aria-hidden="true">39.</strong> Resume Record</a></li><li class="chapter-item expanded "><a href="Interview/mock/bq_mock.html"><strong aria-hidden="true">40.</strong> BQ_mock</a></li><li class="chapter-item expanded affix "><li class="part-title">TypeScript</li><li class="chapter-item expanded affix "><li class="part-title">System Design</li><li class="chapter-item expanded "><a href="SystemDesign/Basic.html"><strong aria-hidden="true">41.</strong> Basic</a></li><li class="chapter-item expanded "><a href="SystemDesign/optimization.html"><strong aria-hidden="true">42.</strong> optimization</a></li><li class="chapter-item expanded "><a href="SystemDesign/conclusion.html"><strong aria-hidden="true">43.</strong> conclusion</a></li><li class="chapter-item expanded "><a href="SystemDesign/feeds.html"><strong aria-hidden="true">44.</strong> feeds</a></li><li class="chapter-item expanded "><a href="SystemDesign/instagram.html"><strong aria-hidden="true">45.</strong> instagram</a></li><li class="chapter-item expanded "><a href="SystemDesign/aws.html"><strong aria-hidden="true">46.</strong> aws</a></li><li class="chapter-item expanded "><a href="SystemDesign/chat.html"><strong aria-hidden="true">47.</strong> chat</a></li><li class="chapter-item expanded "><a href="SystemDesign/imageCarousel.html"><strong aria-hidden="true">48.</strong> imageCarousel</a></li><li class="chapter-item expanded "><a href="SystemDesign/dropdown.html"><strong aria-hidden="true">49.</strong> dropdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Haskell</li><li class="chapter-item expanded "><a href="Haskell/Intro.html"><strong aria-hidden="true">50.</strong> Intro</a></li><li class="chapter-item expanded "><a href="Haskell/Sokoban.html"><strong aria-hidden="true">51.</strong> Sokoban</a></li><li class="chapter-item expanded affix "><li class="part-title">Category Theory</li><li class="chapter-item expanded "><a href="category/2.1Monomorphisms.html"><strong aria-hidden="true">52.</strong> 2.1 Monomorphisms</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+           
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Note By Dot</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="note"><a class="header" href="#note">Note</a></h1>
+<p>Record some notes while learning. It will include below contents:</p>
+<ul>
+<li>Category Theory</li>
+<li>Haskell</li>
+<li>JavaScript</li>
+<li>React</li>
+<li>Python</li>
+<li>LeetCode</li>
+<li>TypeScript</li>
+<li>System Design</li>
+<li>CSS</li>
+</ul>
+<p>WIP 🚧</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="javascript"><a class="header" href="#javascript">JavaScript</a></h1>
+<h3 id="core"><a class="header" href="#core">Core</a></h3>
+<ul>
+<li>Variables &amp; Data Types
+<ul>
+<li>Variable Hoisting</li>
+<li><code>var</code>, <code>let</code>, <code>const</code></li>
+</ul>
+</li>
+<li>Functions
+<ul>
+<li>Function Declarations vs Expressions</li>
+</ul>
+</li>
+<li>Scope &amp; Closures
+<ul>
+<li>Function Scope, Block Scope</li>
+<li>Closures</li>
+</ul>
+</li>
+<li><code>this</code></li>
+<li>DOM
+<ul>
+<li>DOM Manipulation</li>
+<li>Event Handling</li>
+</ul>
+</li>
+</ul>
+<h3 id="intermediate"><a class="header" href="#intermediate">Intermediate</a></h3>
+<ul>
+<li>Prototype Chain</li>
+<li>Async Programming
+<ul>
+<li>Callbacks</li>
+<li>Promises</li>
+<li>Async/Await</li>
+</ul>
+</li>
+<li>JavaScript Event Loop</li>
+<li>ES6+ Features
+<ul>
+<li>Arrow Functions</li>
+<li>Destructuring</li>
+<li>Spread &amp; Rest Operators</li>
+</ul>
+</li>
+<li>Error Handling
+<ul>
+<li><code>try/catch</code></li>
+<li>Custom Errors</li>
+</ul>
+</li>
+</ul>
+<h3 id="advanced"><a class="header" href="#advanced">Advanced</a></h3>
+<ul>
+<li>Advanced Closures</li>
+<li>Advanced <code>this</code> Binding
+<ul>
+<li><code>call</code>, <code>apply</code>, <code>bind</code></li>
+</ul>
+</li>
+<li>Inheritance &amp; Prototypes
+<ul>
+<li>ES6 Classes</li>
+<li>Inheritance Patterns</li>
+</ul>
+</li>
+<li>Memory Management
+<ul>
+<li>Garbage Collection</li>
+<li>Memory Leaks</li>
+</ul>
+</li>
+<li>Performance Optimization
+<ul>
+<li>Throttling &amp; Debouncing</li>
+</ul>
+</li>
+<li>Design Patterns
+<ul>
+<li>Module Pattern</li>
+<li>Singleton Pattern</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="basic-js"><a class="header" href="#basic-js">Basic JS</a></h1>
+<ul>
+<li>status !== ''
+<ul>
+<li>!!status</li>
+</ul>
+</li>
+<li>||= 0
+<ul>
+<li>所有false值</li>
+</ul>
+</li>
+<li>?? 0
+<ul>
+<li>null, undefined(not include 0)</li>
+</ul>
+</li>
+<li>.filter(Boolean)</li>
+<li>Math.ceil</li>
+<li>Math.floor</li>
+<li>Math.round</li>
+<li>(number) =&gt; +number
+<ul>
+<li>隐式转换</li>
+</ul>
+</li>
+<li>Number(null) = 0</li>
+<li>toFixed(2)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="type-comparison"><a class="header" href="#type-comparison">Type Comparison</a></h1>
+<p>在GFE做了很多type相关的题目，比如<code>deep equal</code>，重点type是<code>Object</code>和<code>Array</code>,先遍历，如果item是多层嵌套的，在每个item递归调用，另外，在<code>Object</code>中，还需要排除<code>null</code>的情况。</p>
+<blockquote>
+<p>Hint: <code>forEach</code>里的<code>return</code>不会终止循环，<code>for</code>里的<code>return</code>会终止循环。其他的思路是，可以用every和some，他们可以中止循环。</p>
+</blockquote>
+<h2 id="primitive"><a class="header" href="#primitive"><code>Primitive</code></a></h2>
+<ul>
+<li><code>Object.is(NaN, NaN)</code></li>
+<li><code>typeof NaN</code></li>
+<li><code>Object.prototype.toString.call(valueA)</code></li>
+</ul>
+<h2 id="object"><a class="header" href="#object"><code>Object</code></a></h2>
+<p>首先判断是不是object，可以用typeof和判断不是null。</p>
+<p>通过<code>Object.keys()</code>来拿到keys，先判断length是否一致，再用<code>for...of</code>来遍历，递归调用<code>deepEqual</code>。</p>
+<h3 id="判断object"><a class="header" href="#判断object">判断object</a></h3>
+<ul>
+<li><code> Object.getPrototypeOf(value) === Object.prototype</code></li>
+<li><code>value instanceof Object</code></li>
+<li><code>typeof value === 'object' &amp;&amp; value !== null</code></li>
+</ul>
+<h3 id="iterate-object"><a class="header" href="#iterate-object">iterate object</a></h3>
+<h3 id="判断obj里有没有x属性"><a class="header" href="#判断obj里有没有x属性">判断obj里有没有x属性</a></h3>
+<ul>
+<li><code>Object.hasOwn(obj, x)</code></li>
+<li><code>Object.prototype.hasOwnProperty.call(obj, x)</code></li>
+</ul>
+<h2 id="array"><a class="header" href="#array"><code>Array</code></a></h2>
+<p>思路的是先判断是否是array，再判断length是否一致，再遍历，遍历时候递归来判断每个item是否一致.注意<code>forEach</code>里的<code>return</code>不会终止循环，<code>for</code>里的<code>return</code>会终止循环。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="array-1"><a class="header" href="#array-1">Array</a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<ul>
+<li><a href="JS/Array.html#array">Array</a>
+<ul>
+<li><a href="JS/Array.html#table-of-contents">Table of Contents</a></li>
+<li><a href="JS/Array.html#reduce">reduce</a></li>
+<li><a href="JS/Array.html#init-methods">Init methods</a></li>
+<li><a href="JS/Array.html#copy-array-clone">Copy Array Clone</a>
+<ul>
+<li><a href="JS/Array.html#not-change-original-array---shallow-copy">Not change original array - Shallow Copy</a></li>
+<li><a href="JS/Array.html#change-original-array">change original array</a></li>
+<li><a href="JS/Array.html#deep-copy">Deep Copy</a></li>
+</ul>
+</li>
+<li><a href="JS/Array.html#methods">Methods</a>
+<ul>
+<li><a href="JS/Array.html#return-new-array">return new array</a></li>
+</ul>
+</li>
+<li><a href="JS/Array.html#change-original-array-1">change original array</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="reduce"><a class="header" href="#reduce">reduce</a></h2>
+<p>reduce is a simplified version of iteration</p>
+<pre><code class="language-JS">arr.reduce((acc, cur) → acc + cur.price, 0);
+</code></pre>
+<h2 id="init-methods"><a class="header" href="#init-methods">Init methods</a></h2>
+<ul>
+<li><code>[]</code></li>
+<li><code>new Array()</code></li>
+<li><code>Array.of(1, 2, 3)</code></li>
+<li><code>Array.from({ length: 3 }, (_, i) =&gt; i)</code></li>
+<li><code>Array.from(set)</code></li>
+<li><code>Array(3).fill('x')</code>
+<ul>
+<li>初始化包含x个为y元素的array</li>
+</ul>
+</li>
+</ul>
+<h2 id="copy-array-clone"><a class="header" href="#copy-array-clone">Copy Array Clone</a></h2>
+<h3 id="not-change-original-array---shallow-copy"><a class="header" href="#not-change-original-array---shallow-copy">Not change original array - Shallow Copy</a></h3>
+<ul>
+<li><strong><code>arr.slice()</code></strong></li>
+<li><code>arr.concat()</code></li>
+</ul>
+<h3 id="change-original-array"><a class="header" href="#change-original-array">change original array</a></h3>
+<ul>
+<li><code>[...arr]</code></li>
+</ul>
+<h3 id="deep-copy"><a class="header" href="#deep-copy">Deep Copy</a></h3>
+<ul>
+<li><code>JSON.parse(JSON.stringify(arr))</code></li>
+<li><code>Array.from(arr)</code></li>
+</ul>
+<h2 id="methods"><a class="header" href="#methods">Methods</a></h2>
+<h3 id="return-new-array"><a class="header" href="#return-new-array">return new array</a></h3>
+<ul>
+<li>
+<p><code>arr.map(fn)</code></p>
+</li>
+<li>
+<p><code>arr.filter(fn)</code></p>
+</li>
+<li>
+<p><code>arr.reduce(fn, initialValue)</code></p>
+</li>
+<li>
+<p><code>arr.flat(depth)</code></p>
+</li>
+<li>
+<p><code>arr.flatMap(fn)</code></p>
+</li>
+<li>
+<p><code>arr.slice(start, end)</code></p>
+<ul>
+<li>start: 开始索引</li>
+<li>end: 结束索引(不包括)</li>
+</ul>
+</li>
+<li>
+<p><code>arr.every(fn)</code></p>
+</li>
+<li>
+<p><code>arr.some(fn)</code></p>
+</li>
+<li>
+<p><code>arr.find(fn)</code></p>
+</li>
+<li>
+<p><code>arr.findIndex(fn)</code></p>
+</li>
+<li>
+<p><code>arr.indexOf(item)</code></p>
+</li>
+<li>
+<p><code>arr.lastIndexOf(item)</code></p>
+</li>
+<li>
+<p><code>arr.includes(item)</code></p>
+</li>
+</ul>
+<h2 id="change-original-array-1"><a class="header" href="#change-original-array-1">change original array</a></h2>
+<ul>
+<li><code>arr.splice(start, deleteCount, item1, item2, item3)</code>
+<ul>
+<li>deleteCount: 删除的元素个数</li>
+<li>item1, item2, item3: 添加的元素</li>
+<li>主要是删除元素，添加元素</li>
+</ul>
+</li>
+<li><code>arr.push(item)</code></li>
+<li><code>arr.pop()</code></li>
+<li><code>arr.shift()</code></li>
+<li><code>arr.unshift(item)</code></li>
+<li><code>arr.reverse()</code></li>
+<li><code>arr.sort(fn)</code></li>
+<li><code>arr.sort((a, b) =&gt; a - b)</code></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="function"><a class="header" href="#function">Function</a></h1>
+<h2 id="curry"><a class="header" href="#curry">Curry</a></h2>
+<h2 id="iifeimmediately-invoked-function-expression"><a class="header" href="#iifeimmediately-invoked-function-expression">IIFE(Immediately invoked function expression)</a></h2>
+<pre><code class="language-Javascript">(()=&gt;{
+
+})()
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="object-1"><a class="header" href="#object-1">Object</a></h1>
+<h2 id="basic-method"><a class="header" href="#basic-method">Basic method</a></h2>
+<ul>
+<li><code>Object.values</code></li>
+</ul>
+<h2 id="判断key是否是原生的"><a class="header" href="#判断key是否是原生的">判断key是否是原生的</a></h2>
+<pre><code class="language-js">Object.hasOwn(obj, key)
+</code></pre>
+<h2 id="iterate-object-1"><a class="header" href="#iterate-object-1">iterate object</a></h2>
+<pre><code class="language-js">for (const [key, value] of Object.entries(obj)) {
+    console.log(key, value);
+}
+Object.entries(obj).map(([key, value]) =&gt; {
+    console.log(key, value);
+})
+</code></pre>
+<h2 id="判断是否是object"><a class="header" href="#判断是否是object">判断是否是object</a></h2>
+<ul>
+<li><code>typeof obj === 'object' &amp;&amp; obj !== null</code>
+<ul>
+<li>不能判断<code>obj</code>是<code>Array</code>，<code>Function</code>等。</li>
+</ul>
+</li>
+<li>isPlainObject 判断是否是纯对象，排除<code>Array</code>，<code>Function</code>等。</li>
+</ul>
+<pre><code class="language-js">function isPlainObject(value) {
+  if (value == null) {
+    return false;
+  }
+
+  const prototype = Object.getPrototypeOf(value);
+  return prototype === null || prototype === Object.prototype;
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="map"><a class="header" href="#map">Map</a></h1>
+<h2 id="initialize"><a class="header" href="#initialize">Initialize</a></h2>
+<pre><code class="language-js">const map = new Map([
+  ['key1', 'value1'],
+  ['key2', 'value2'],
+]);
+</code></pre>
+<h2 id="methods-1"><a class="header" href="#methods-1">Methods</a></h2>
+<ul>
+<li>
+<p><code>map.set(key, value)</code></p>
+</li>
+<li>
+<p><code>map.get(key)</code></p>
+</li>
+<li>
+<p><code>map.has(key)</code></p>
+</li>
+<li>
+<p><code>map.delete(key)</code></p>
+</li>
+<li>
+<p><code>map.clear()</code></p>
+</li>
+<li>
+<p><code>map.size</code></p>
+</li>
+</ul>
+<h2 id="iteration"><a class="header" href="#iteration">Iteration</a></h2>
+<pre><code class="language-js">for (const [key, value] of map) {
+  console.log(key, value);
+}
+</code></pre>
+<h1 id="set"><a class="header" href="#set">Set</a></h1>
+<h2 id="initialize-1"><a class="header" href="#initialize-1">Initialize</a></h2>
+<pre><code class="language-js">const set = new Set([1, 2, 3]);
+</code></pre>
+<h2 id="methods-2"><a class="header" href="#methods-2">Methods</a></h2>
+<ul>
+<li><code>set.add(value)</code></li>
+<li><code>set.has(value)</code></li>
+<li><code>set.delete(value)</code></li>
+<li><code>set.clear()</code></li>
+<li><code>set.size</code></li>
+</ul>
+<h2 id="iteration-1"><a class="header" href="#iteration-1">Iteration</a></h2>
+<pre><code class="language-js">for (const value of set) {
+  console.log(value);
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="dom"><a class="header" href="#dom">DOM</a></h1>
+<h2 id="form-process"><a class="header" href="#form-process">Form process</a></h2>
+<ul>
+<li>用<code>querySelector</code>来获取form</li>
+<li></li>
+</ul>
+<h2 id="get-element"><a class="header" href="#get-element">get Element</a></h2>
+<pre><code class="language-JavaScript">const $form = document.querySelector('form')
+const $usernameInput = document.querySelector('#username-input')
+const $usernameInput = document.getElementById('username-input')
+</code></pre>
+<h2 id="set-attribute"><a class="header" href="#set-attribute">set Attribute</a></h2>
+<pre><code class="language-JavaScript">$usernameInput.removeAttribute('minlength')
+$usernameInput.setAttribute('minlength', '4')
+</code></pre>
+<h2 id="css-add-class"><a class="header" href="#css-add-class">CSS add class</a></h2>
+<pre><code class="language-JavaScript">$usernameInput.classList.add('hidden')
+$usernameInput.classList.remove('hidden')
+</code></pre>
+<h2 id="formdata"><a class="header" href="#formdata">FormData</a></h2>
+<blockquote>
+<p>formData.get(name)里的parameter对应的是input的name</p>
+</blockquote>
+<pre><code class="language-JavaScript">const formData = new FormData($form)
+const username = formData.get('username')
+</code></pre>
+<h2 id="event-listener"><a class="header" href="#event-listener">Event Listener</a></h2>
+<pre><code class="language-JavaScript">$form.addEventListener('submit', async (event) =&gt; {
+  event.preventDefault()
+})
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="debounce"><a class="header" href="#debounce">Debounce</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="react"><a class="header" href="#react">React</a></h1>
+<h2 id="preface"><a class="header" href="#preface">Preface</a></h2>
+<p>Plan: Basic(1 week) - core(2 week) - advanced(1 week)</p>
+<ul>
+<li><a href="https://react.dev/reference/react/hooks">react.dev</a></li>
+</ul>
+<h2 id="core-1"><a class="header" href="#core-1">core</a></h2>
+<ul>
+<li>JSX</li>
+<li>Propx</li>
+<li>State</li>
+<li>HandleEvent</li>
+<li>Lifecycle</li>
+<li>Hooks</li>
+</ul>
+<h2 id="advanced-1"><a class="header" href="#advanced-1">advanced</a></h2>
+<ul>
+<li>HOC</li>
+<li>Context</li>
+<li>memo, callback</li>
+<li>Render Props</li>
+<li>Code splitting</li>
+<li>SSR</li>
+<li>SSG</li>
+<li>Reducer</li>
+<li>Router</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="react-theory"><a class="header" href="#react-theory">React Theory</a></h1>
+<h2 id="preface-1"><a class="header" href="#preface-1">preface</a></h2>
+<ul>
+<li>component process
+<ul>
+<li>component(template) - instance - executed function - insert dom into Html(React use CreateElement)</li>
+<li>component could manage its own state
+<ul>
+<li>one state one component, they are independent</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>props 传递parent的state给child - external
+<ul>
+<li>newProps --&gt; component re-render</li>
+</ul>
+</li>
+<li>state 管理当前component的state - internal
+<ul>
+<li>state改变 --&gt; re-render</li>
+</ul>
+</li>
+</ul>
+<h2 id="state-management"><a class="header" href="#state-management">state management</a></h2>
+<ul>
+<li>local state vs global state
+<ul>
+<li>local state: component instance</li>
+<li>global state: context</li>
+</ul>
+</li>
+</ul>
+<table><thead><tr><th><strong>条件</strong></th><th><strong>结果</strong></th></tr></thead><tbody>
+<tr><td><strong>需要存储数据</strong></td><td></td></tr>
+<tr><td>数据是否会在某个时间点发生变化？</td><td>否 → 使用常规 <code>const</code> 变量</td></tr>
+<tr><td></td><td>是 → 继续下一个条件</td></tr>
+<tr><td>能否从现有的状态/props 计算出来？</td><td>是 → 派生状态（<code>Derive state</code>）</td></tr>
+<tr><td></td><td>否 → 继续下一个条件</td></tr>
+<tr><td>它是否应该重新渲染组件？</td><td>否 → 使用 <code>Ref</code>（<code>useRef</code>）</td></tr>
+<tr><td></td><td>是 → 在组件中创建一个新的状态</td></tr>
+<tr><td><strong>何时创建状态</strong></td><td><strong>何处放置状态</strong></td></tr>
+<tr><td>该状态是否仅由当前组件使用？</td><td>是 → 将状态保留在组件中</td></tr>
+<tr><td></td><td>否 → 继续下一个条件</td></tr>
+<tr><td>该状态是否也被子组件使用？</td><td>是 → 通过 props 传递给子组件</td></tr>
+<tr><td></td><td>否 → 继续下一个条件</td></tr>
+<tr><td>该状态是否被一个或几个兄弟组件使用？</td><td>是 → 将状态提升到第一个共同的父组件</td></tr>
+<tr><td></td><td></td></tr>
+</tbody></table>
+<h2 id="react-render"><a class="header" href="#react-render">React render</a></h2>
+<blockquote>
+<p>React to state changes by re-render UI😂</p>
+</blockquote>
+<h3 id="2-conditions-to-re-render"><a class="header" href="#2-conditions-to-re-render">2 conditions to re-render</a></h3>
+<ul>
+<li>initial render</li>
+<li>state update - component re-render - view re-render</li>
+<li>Virtual DOM - cheap and fast to create multiple trees</li>
+</ul>
+<blockquote>
+<p>write to dom is expensive and slow, usually only small part need to update</p>
+</blockquote>
+<h3 id="render-phase"><a class="header" href="#render-phase">Render phase</a></h3>
+<p>Has impact on all of its children</p>
+<blockquote>
+<p>Reconciler - decide which DOM elements need to update
+fiber tree(fiber for each component and DOM element)
+&gt; contain: state, props, side effects, hooks, queue of work...
+Updated React Elements --&gt; new Virtual DOM + current Fiber Tree --&gt; reconciliation + diff
+render(diff) &gt; patch(diff) &gt; re-render
+render will not been triggered instantly, but will be scheduled when JS engine is idle --&gt; <strong>Asynchronous</strong>(Can be splited into diff chunks)</p>
+</blockquote>
+<h4 id="commit-phase"><a class="header" href="#commit-phase">Commit phase</a></h4>
+<blockquote>
+<p>list of DOM updates --&gt; Renderers: ReactDOM: write to dom --&gt; update UI
+commit is synchronous
+after finish commit, WIP fiber tree become current fiber tree</p>
+</blockquote>
+<h5 id="diff"><a class="header" href="#diff">diff</a></h5>
+<ul>
+<li>same position, different element
+<ul>
+<li>destroy old tree including its children</li>
+</ul>
+</li>
+<li>same position, same element
+<ul>
+<li>更新属性,不重新渲染DOM(element and state)</li>
+</ul>
+</li>
+</ul>
+<h4 id="browser-paint"><a class="header" href="#browser-paint">browser paint</a></h4>
+<h2 id="component-instance-lifecycle"><a class="header" href="#component-instance-lifecycle">Component Instance Lifecycle</a></h2>
+<ul>
+<li>Mounting(initial render)</li>
+<li>Updating(state/props/parent rerenders/context update)</li>
+<li>Unmounting(remove component)
+<img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/4pc0dQtest.png" alt="4pc0dQtest" /></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="design"><a class="header" href="#design">Design</a></h1>
+<blockquote>
+<p>记录一些平时看到的可以改进的design tips,另方面我认为前端的设计分为process data-&gt; state management --&gt; how to render,并且我看来数据处理和render是最困难的部分</p>
+</blockquote>
+<p>如果是在一个组件里有自定义的数据,可以把数据放在parent里, 然后通过props传递给child,这样结构更好</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hooks"><a class="header" href="#hooks">Hooks</a></h1>
+<h2 id="usestate"><a class="header" href="#usestate"><code>useState</code></a></h2>
+<h3 id="多个相同的组件的state"><a class="header" href="#多个相同的组件的state">多个相同的组件的state</a></h3>
+<p>可以用<code>set</code>来管理</p>
+<h3 id="update-state"><a class="header" href="#update-state">update state</a></h3>
+<ul>
+<li>函数式更新(可以拿到上一次的state)</li>
+</ul>
+<pre><code class="language-JSX">setStep((prev)=&gt;prev+1)
+</code></pre>
+<pre><code class="language-JSX">// closure
+set((prev)=&gt;
+prev.map((item)=&gt;item.id === 1 ? updatedItem: item)
+)
+</code></pre>
+<h3 id="initial-state"><a class="header" href="#initial-state">Initial State</a></h3>
+<ul>
+<li>如果是obj的arr，可以加一个id属性，方便CRUD</li>
+<li>不知道用啥,可以选择<code>null</code></li>
+</ul>
+<pre><code class="language-JSX">const generateId = (() =&gt; {
+  let id = 0;
+  return () =&gt; `${id++}`;
+})();
+</code></pre>
+<h2 id="useeffect"><a class="header" href="#useeffect"><code>useEffect</code></a></h2>
+<blockquote>
+<p>side effect, like the event handler, but it needs to be triggered by event, useEffect is more flexible
+Need a clean up function?</p>
+</blockquote>
+<h3 id="points"><a class="header" href="#points">points</a></h3>
+<ul>
+<li>Effect is sync, so the async func need to be wrapped in another func</li>
+<li>useEffect could be called twice in <code>React Strict Mode</code>, not in <code>production</code></li>
+<li>在调api前后加loading state</li>
+<li>用try catch, 在catch里setError,在return里render <Loading> or <Data> or <Error></li>
+<li>the code don't need to run every re-render</li>
+<li>it could be executed on every render stage, depending on dependency array</li>
+</ul>
+<h3 id="dependency-array"><a class="header" href="#dependency-array">Dependency Array</a></h3>
+<ul>
+<li>[]
+<ul>
+<li>init render(mount)</li>
+</ul>
+</li>
+<li>[state, props]
+<ul>
+<li>init render(mount)</li>
+<li>state or props change</li>
+</ul>
+</li>
+<li>no dependency array
+<ul>
+<li>run on every render</li>
+</ul>
+</li>
+</ul>
+<h3 id="clean-up"><a class="header" href="#clean-up">Clean Up</a></h3>
+<ul>
+<li>在effect前和unmount后执行</li>
+</ul>
+<h2 id="useref"><a class="header" href="#useref"><code>useRef</code></a></h2>
+<blockquote>
+<p>返回一个可变的 ref 对象，其 <code>current</code> 属性被初始化为传入的参数（initial value）。返回的 ref 对象在组件的整个生命周期内保持不变。</p>
+</blockquote>
+<ul>
+<li><code>const inputRef = useRef&lt;HTMLInputElement&gt;([]);</code></li>
+<li>Input
+<ul>
+<li><code>ref={(el) =&gt; inputRef.current = el}</code></li>
+</ul>
+</li>
+<li>focus
+<ul>
+<li><code>inputRef.current[index].focus()</code></li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="api-call-in-react"><a class="header" href="#api-call-in-react">API Call in React</a></h1>
+<ul>
+<li>async function</li>
+<li><code>await fetch</code></li>
+<li><code>await response.text()</code></li>
+<li>request
+<ul>
+<li>method</li>
+<li>heads
+<ul>
+<li>
+<pre><code></code></pre>
+</li>
+</ul>
+'Content-Type': 'application/json',
+<pre><code></code></pre>
+</li>
+<li>body
+<ul>
+<li>
+<pre><code></code></pre>
+</li>
+</ul>
+JSON.stringify({
+name: 'John',
+age: 30,
+}),
+<pre><code>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-JSX">const [isLoading, setIsLoading] = useState(false);
+const [error, setError] = useState(null);
+async function fetchData() {
+    try{
+        setIsLoading(true);
+        setError(null);
+         const response = await fetch('https://api.example.com/data',{
+            method: 'GET',
+            headers: {
+            'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+            name: 'John',
+            age: 30,
+            }),
+        });
+        if(response.ok){
+            setLiked(!liked)
+        }
+        const data = await response.json();
+        return data;
+    }catch(error){
+        setError(error);
+        console.error('Error fetching data:', error);
+    } finally {
+        setIsLoading(false);
+    }
+  const data = await response.json();
+  return data;
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="redux"><a class="header" href="#redux">Redux</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="react-ui"><a class="header" href="#react-ui">React UI</a></h1>
+<h2 id="button"><a class="header" href="#button">button</a></h2>
+<pre><code>&lt;button type=&quot;button&quot; className={isLike ? 'liked' : 'unliked'} 
+onClick={()=&gt;{
+    setValue(itemValue)
+}}&gt;Primary&lt;/button&gt;
+</code></pre>
+<h2 id="hidden"><a class="header" href="#hidden"><strong>hidden</strong></a></h2>
+<pre><code>&lt;div hidden={value}&gt;
+    &lt;p&gt;Hello&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+<h2 id="hint"><a class="header" href="#hint">Hint</a></h2>
+<ul>
+<li>把参数放到组件外 传入</li>
+</ul>
+<h2 id="form"><a class="header" href="#form">Form</a></h2>
+<p>form的每个item里包含<code>label</code>和<code>input</code>, 用div来wrap 每个item(label+input) label里的<code>for</code>和input的<code>id</code>一致(比如<code>username-input</code>).input里的属性比较多，重要的有<code>name</code>, <code>type</code>, <strong><code>required</code></strong>, <code>minlength</code></p>
+<h3 id="select---option"><a class="header" href="#select---option">select - option</a></h3>
+<ul>
+<li><code>select</code> <code>option</code>
+<ul>
+<li>
+<pre><code class="language-JSX">&lt;select value={value} onChange={(e)=&gt;setValue(e.target.value)}&gt;
+  &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="formdata-1"><a class="header" href="#formdata-1">FormData</a></h3>
+<pre><code class="language-JavaScript">const formData = new FormData(event.target, event.nativeEvent.submitter);
+const intent = formData.get('intent')
+</code></pre>
+<h3 id="input"><a class="header" href="#input">Input</a></h3>
+<blockquote>
+<p>在JSX里不是<code>for</code>而是<code>htmlFor</code></p>
+</blockquote>
+<pre><code class="language-JSX">&lt;label htmlFor=&quot;input-box&quot;&gt;Input&lt;/label&gt;
+</code></pre>
+<pre><code class="language-JavaScript">onKeyDown={(e)=&gt;handleKeyDown(e)}
+onPaste={(e)=&gt;handlePaste(e)}
+onFocus={(e)=&gt;handleFocus(e)}
+</code></pre>
+<pre><code class="language-JavaScript">function handleKeyDown(e){
+    if(e.key === 'Enter'){
+        // ex:`ArrowLeft` `Backspace` `Enter` `ArrowRight`
+        console.log('enter')
+    }
+}
+</code></pre>
+<h3 id="validation"><a class="header" href="#validation">Validation</a></h3>
+<ul>
+<li><code>inputMode='numeric'</code></li>
+<li><code>pattern='[0-9]*'</code>
+<ul>
+<li><code>pattern=&quot;^[a-zA-Z0-9]+$&quot;</code></li>
+</ul>
+</li>
+<li><code>maxLength='10'</code></li>
+</ul>
+<h3 id="submit"><a class="header" href="#submit">submit</a></h3>
+<p>submit里一定不要忘了<code>event.preventDefault()</code></p>
+<h4 id="button-1"><a class="header" href="#button-1">button</a></h4>
+<ul>
+<li>submit中需要<code>disable input</code>
+<ul>
+<li>哪些情况需要<code>disable</code>？</li>
+</ul>
+</li>
+</ul>
+<h2 id="search-input"><a class="header" href="#search-input">Search input</a></h2>
+<p>在处理input时候可以用<code>toLowerCase()</code>和<code>trim()</code>来处理</p>
+<ul>
+<li><code>placeholder</code></li>
+</ul>
+<pre><code class="language-JSX">&lt;input type=&quot;text&quot; placeholder=&quot;Search...&quot; /&gt;
+</code></pre>
+<h3 id="textarea"><a class="header" href="#textarea"><code>textarea</code></a></h3>
+<h3 id="aria"><a class="header" href="#aria">Aria</a></h3>
+<ul>
+<li><code>aria-hidden</code></li>
+<li><code>aria-expanded</code></li>
+<li><code>aria-controls</code></li>
+<li><code>aria-label</code></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="css-basic"><a class="header" href="#css-basic">CSS Basic</a></h1>
+<h2 id="命名"><a class="header" href="#命名">命名</a></h2>
+<ul>
+<li><code>wrapper</code></li>
+<li><code>container</code></li>
+<li><code>flex-container</code></li>
+<li><code>input-box</code></li>
+</ul>
+<h2 id="pseudo-class"><a class="header" href="#pseudo-class">pseudo class</a></h2>
+<ul>
+<li><code>first-child</code></li>
+<li><code>:not(:first-child)</code></li>
+</ul>
+<h3 id="hover"><a class="header" href="#hover">Hover</a></h3>
+<pre><code class="language-css">.btn:hover {
+    background-color: red;
+}
+</code></pre>
+<h2 id="def-variable-and-use"><a class="header" href="#def-variable-and-use">def variable and use</a></h2>
+<pre><code class="language-css">:root {
+    --blue: #007bff;
+}
+
+.btn {
+    background-color: var(--blue);
+}
+</code></pre>
+<h2 id="button-2"><a class="header" href="#button-2">button</a></h2>
+<h3 id="name"><a class="header" href="#name">name</a></h3>
+<ul>
+<li><code>button--primary</code></li>
+<li><code>button--secondary</code></li>
+<li><code>button--danger</code></li>
+</ul>
+<pre><code class="language-css">.btn {
+    cursor: pointer;
+    padding: 4px 8px;
+    font-weight: bold;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    display: flex;
+    gap: 1/2rem;
+}
+.btn:focus{
+    outline: 2px solid #000;
+  outline-offset: 1px;
+}
+.btn:disabled{
+    opacity: 0.25;
+    cursor: not-allowed;
+    transition: all 0.3s linear;
+}
+</code></pre>
+<h2 id="input-1"><a class="header" href="#input-1">input</a></h2>
+<pre><code class="language-css">input:focus {
+    outline: 1px solid #000;
+}
+
+```css
+.input-box {
+  --size: 3rem;
+  height: var(--size);
+  width: var(--size);
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+</code></pre>
+<pre><code>## hidden
+
+```css
+.hidden {
+    display: none;
+}
+</code></pre>
+<h2 id="wrapper"><a class="header" href="#wrapper">wrapper</a></h2>
+<pre><code class="language-css">.wrapper {
+    width: 100vw;
+    height: 100vh;
+}
+</code></pre>
+<h2 id="bem"><a class="header" href="#bem">BEM</a></h2>
+<blockquote>
+<p>先说细节,再说更加specific的</p>
+</blockquote>
+<p>EX: <code>like-button--default</code> 和 <code>like-button--liked</code></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="others"><a class="header" href="#others">Others</a></h1>
+<h2 id="date"><a class="header" href="#date">Date</a></h2>
+<blockquote>
+<p>Javascript的时间戳都是以毫秒为单位,一天aka <code>24 * 60 * 60 * 1000</code></p>
+</blockquote>
+<ul>
+<li>getFullYear() - year</li>
+<li>(getMonth() + 1).toString().padStart(2, '0') - month</li>
+<li>getDate().toString().padStart(2, '0') - day</li>
+<li>input的type是date的返回值是<code>YYYY-MM-DD</code></li>
+<li>new Date() 返回当前的时间戳</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="nextjs-basic"><a class="header" href="#nextjs-basic">NextJs basic</a></h1>
+<h2 id="navigation"><a class="header" href="#navigation">Navigation</a></h2>
+<ul>
+<li><code>Link</code></li>
+</ul>
+<h2 id="layout"><a class="header" href="#layout">Layout</a></h2>
+<ul>
+<li><code>RootLayout</code></li>
+<li><code>{children}</code></li>
+</ul>
+<h2 id="loading"><a class="header" href="#loading">Loading</a></h2>
+<ul>
+<li><code>loading.tsx</code></li>
+</ul>
+<h2 id="image"><a class="header" href="#image">Image</a></h2>
+<h3 id="property"><a class="header" href="#property">property</a></h3>
+<h4 id="layout-1"><a class="header" href="#layout-1">layout</a></h4>
+<ul>
+<li>fill
+<ul>
+<li>作为bg来填充容器</li>
+</ul>
+</li>
+<li>fixed
+<ul>
+<li>固定大小的图片</li>
+</ul>
+</li>
+<li>responsive
+<ul>
+<li>可以根据容器大小来调整</li>
+</ul>
+</li>
+<li>intrinsic
+<ul>
+<li>可以调整,不会超过原始的尺寸</li>
+</ul>
+</li>
+</ul>
+<h4 id="objectfit"><a class="header" href="#objectfit">objectFit</a></h4>
+<ul>
+<li>cover
+<ul>
+<li>会填满 但可能被裁剪</li>
+</ul>
+</li>
+<li>contain
+<ul>
+<li>尽可能保持比例,但可能留白</li>
+</ul>
+</li>
+<li>fill
+<ul>
+<li>会填满 但可能变形</li>
+</ul>
+</li>
+<li>scale-down
+<ul>
+<li>会缩减到最小,但不会裁剪,也不会比原来的大</li>
+</ul>
+</li>
+<li>none
+<ul>
+<li>保持原始尺寸</li>
+</ul>
+</li>
+</ul>
+<h4 id="本身的属性的例子"><a class="header" href="#本身的属性的例子">本身的属性的例子</a></h4>
+<pre><code class="language-tsx">  &lt;Image
+    src={logo}
+    width={500}
+    height={500}
+    quality={100}
+    alt=&quot;logo&quot;
+    placeholder=&quot;blur&quot;
+  /&gt;
+</code></pre>
+<h4 id="在外面套用div的例子"><a class="header" href="#在外面套用div的例子">在外面套用div的例子</a></h4>
+<pre><code class="language-tsx">&lt;div className=&quot;relative aspect-square col-span-2&quot;&gt;
+  &lt;Image
+    src={logo}
+    fill
+    alt=&quot;logo&quot;
+    objectFit=&quot;contain&quot;
+    className=&quot;object-contain&quot;
+  /&gt;
+&lt;/div&gt;
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="array-2"><a class="header" href="#array-2">Array</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="two-pointer"><a class="header" href="#two-pointer">Two Pointer</a></h1>
+<h2 id="two-pointer-1"><a class="header" href="#two-pointer-1">two pointer</a></h2>
+<p>一般针对<strong>排序</strong>过的数组，去找target的pair</p>
+<p>最简单的模式(比如：Two Sum II - Input Array Is Sorted)：</p>
+<ul>
+<li>初始化两个指针，一头一尾</li>
+<li>如果大于，左移动r pointer</li>
+<li>如果小于，右移动l pointer</li>
+<li>如果相等，返回</li>
+</ul>
+<p>第二种模式是两个数组，思路：</p>
+<p>两个一起遍历，在某种情况下移动左边，某种情况下移动右边</p>
+<p>有一个很大的细节是需要考虑在遍历的过程中有时候需要<strong>skip</strong>，一般是用while，condition时需要判断pointer是否越界，并且是否满足特定的condition。比如valid Palindrome。</p>
+<p>另一个例子是3 sum，在每个指针移动时都需判断是否跟上一个值相同，如果相同，需要继续Skip，直到不相同为止。</p>
+<p>总之，难点是找<strong>左右指针移动的条件</strong>。比如Container With Most Water，移动的条件是移动height小的pointer来找更大的面积</p>
+<h2 id="merge-two-sorted-lists"><a class="header" href="#merge-two-sorted-lists">Merge Two Sorted Lists</a></h2>
+<p>跟array的没啥区别</p>
+<h3 id="add-two-numbers"><a class="header" href="#add-two-numbers">Add Two Numbers</a></h3>
+<p>这个需要两个指针，iterate这两个linklist，并且存extra进位的值，没有的后就是0，更新进位。移动指针直到None。</p>
+<h2 id="slow-and-fast-pointer"><a class="header" href="#slow-and-fast-pointer">slow and fast pointer</a></h2>
+<p>这个还有点难思考出来。
+删除第n个节点，用两个指针，fast先走n步，然后slow和fast一起走，直到fast到结尾，此时slow的下一个节点就是要删除的节点。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="slide-window"><a class="header" href="#slide-window">Slide Window</a></h1>
+<p>找子集</p>
+<h2 id="base-condition"><a class="header" href="#base-condition">base condition</a></h2>
+<p>先考虑总string和target string的base条件</p>
+<h1 id="general-process"><a class="header" href="#general-process">general process</a></h1>
+<p>固定左边的指针，iterate 右边的指针（edge 不要越界</p>
+<p>移动时计算<strong>process value</strong>，看是否满足condition，满足的话，就更新res值，移动左指针（寻找更优解，需要reset 右指针），移动前需要update <strong>process value</strong>(依赖于指针，所以需要在移动前更新)，不满足的话，就移动右边的指针</p>
+<p>关键点在于如何找到<strong>process value</strong>和condition</p>
+<p>像minimum size subarray sum，比较简单,因为需要的是子集的<code>结果值</code>，而不是<code>过程值</code>.</p>
+<p>像longest substring without repeating characters，对过程值的要求是norepeat，所以需要在遇到重复字符时，把left指针移到上个重复字符的下一个位置。所以需要在<strong>process value</strong> 里存字符的index和字符本身，用hashmap</p>
+<p>像substring with concatenate words 和 Minimum Window Substring，要求permute，所以最好是用curr代表已经满足的unit，把left 移动到第1个word之后 （还需要check 多余的wordm,因为要求是unique）当和总共的unit相等时候，就可以append，如果不满足的话，就把l移动到r？ 所以需要把<strong>process value</strong>存到hashmap里，在遍历的时候不断的去trim这个window多余的key 的值</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="matrix"><a class="header" href="#matrix">Matrix</a></h1>
+<p>最简单的是遍历存值，根据process value来二次遍历替换
+比如说valid sudoku, set matrix zero</p>
+<p>一般来说，需要初始化left和right的boundary。
+比如说 Rotate Image，确定boundary，在boundary之间iterate,再根据order来遍历不同的方向</p>
+<p>Spiral Matrix也是类似的</p>
+<p>Game of Life 这个题的话，有点像island，主要是分开，先算neighbor，再映射结果，再反映射，难点在于算neighbor那里，可以用区间来n2 iterate，而不是手工的调用八个方向</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hashmap"><a class="header" href="#hashmap">Hashmap</a></h1>
+<h2 id="preface-2"><a class="header" href="#preface-2">Preface</a></h2>
+<p>总体不难，一般是先存值，遍历，看是否满足特定的condition。</p>
+<h2 id="basic"><a class="header" href="#basic">Basic</a></h2>
+<pre><code class="language-python"># 初始化
+hashmap = {}
+# 存值
+hashmap[key] = value
+# 取值
+value = hashmap.get(key, default_value)
+# 删除
+del hashmap[key]
+</code></pre>
+<h2 id="data-type"><a class="header" href="#data-type">data type</a></h2>
+<p>重点是如何存值，可能涉及到从str --&gt; list --&gt; str的转换(list(str))，比如把一个str重新排序，比如group anagram
+还需要考虑对input的预处理，如果重复char没有意义，先用Set来去重，再开始iterate</p>
+<p>如果只有数量的维度的话，比较简单，存值和看是否满足condition就可以</p>
+<h2 id="2-arrary"><a class="header" href="#2-arrary">2 arrary</a></h2>
+<p>如果有2个Array，先存第1个hashmap，在遍历第2个array的时候，来对第1个hashmap进行反作用的镜像操作, 比如Ransom Note</p>
+<h2 id="two-array-map-relation"><a class="header" href="#two-array-map-relation">two array map relation</a></h2>
+<p>如果有map的关系，思路是把2个arr用zip bound在一起，遍历的时候，判断map的值是否是另个arr的value，不存在的话加入map，对方也是相同的操作。比如<code>Isomorphic Strings和word Pattern</code></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="interval"><a class="header" href="#interval">Interval</a></h1>
+<h2 id="preface-3"><a class="header" href="#preface-3">Preface</a></h2>
+<p>分Insert和Merge</p>
+<h2 id="merge"><a class="header" href="#merge">Merge</a></h2>
+<p>先排序<code>intervals.sort(key=lambda x: x[0])</code>,再iterate.</p>
+<p>iterate时候有两种情况，有没有<code>overlap</code>(curr[0] &lt;= prev[1])，如果有overlap的话，prev更新为新的interval，首min尾max。没有的话，更新prev为curr。</p>
+<blockquote>
+<p>Hint: Edge-&gt;需要append最后一个interval。</p>
+</blockquote>
+<p>关于排序，如果不需要考虑<code>更新中间值</code>的话(比如Minimum Number of Arrows to Burst Balloons)，可以用<code>intervals.sort(key=lambda x: x[1])</code>，如果需要考虑<code>更新中间值</code>的话(比如Merge Intervals)，可以用<code>intervals.sort(key=lambda x: x[0])</code>。</p>
+<h2 id="insert"><a class="header" href="#insert">Insert</a></h2>
+<ul>
+<li>先append 无overlap（end &lt; newInterval[0]）</li>
+<li>再append 有overlap (start &lt;= prev[1])</li>
+<li>再append 无overlap（把剩下的append）</li>
+</ul>
+<p>用while 来控制each循环。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="stack"><a class="header" href="#stack">Stack</a></h1>
+<p>如果是字符串的话，可以用split转换为array再遍历</p>
+<p>Generally，是需要先遍历（考虑遍历的顺序），然后在某种情况下pop和append。
+所以关键是如何找到相应的condition。有时候需要跟stack的peek(stack[-1])做比较</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="linked-list"><a class="header" href="#linked-list">Linked List</a></h1>
+<h2 id="basic-1"><a class="header" href="#basic-1">Basic</a></h2>
+<h3 id="base-condition-1"><a class="header" href="#base-condition-1">Base condition</a></h3>
+<pre><code class="language-python">if not head:
+    return None
+</code></pre>
+<p>如果是结构上的操作的话，比如rotate或者reverse，需要的base condition会多一点：</p>
+<pre><code class="language-python">if not head or not head.next or k == 0:
+    return head
+</code></pre>
+<blockquote>
+<p>Hint: rotate结束的时候，注意要break，不然会有cycle，最后end节点point to <code>None</code></p>
+</blockquote>
+<h3 id="dummy-node"><a class="header" href="#dummy-node">dummy node</a></h3>
+<blockquote>
+<p>为了处理边界情况，比如删除头结点，或者反转链表。</p>
+</blockquote>
+<pre><code class="language-python">dummy = ListNode(0, head)
+</code></pre>
+<h2 id="init-node"><a class="header" href="#init-node">Init Node</a></h2>
+<pre><code class="language-python">class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+# example 
+dummy = ListNode()
+curr = dummy
+curr.next = ListNode(1)
+# move curr to next 
+curr = curr.next
+return dummy.next
+</code></pre>
+<h2 id="reverse"><a class="header" href="#reverse">Reverse</a></h2>
+<h3 id="reverse-part-of-list"><a class="header" href="#reverse-part-of-list">Reverse Part of List</a></h3>
+<p>思路的是，先遍历到part之前，记录part的first node（reverse后的last node），遍历这个part并且reverse，再把part的终点指向之后那段的头。</p>
+<p>步骤的话比较detail，
+首先create一个dummy node，指向当前的head，返回的时候用<code>dummy.next</code>即可。
+遍历到part前，是left-1个，用<code>range(left-1)</code>, 把prevLeft和curr迭代向后</p>
+<p>之后是reverse的部分，用<code>range(right-left+1)</code>。prev指向null。</p>
+<pre><code class="language-python">temp = curr.next
+curr.next = prev
+prev, curr = curr, temp
+</code></pre>
+<p>最后，连接这3部分，leftprev.next仍指向part的first node，所以 part里的最后一个node是<code>leftprev.next</code></p>
+<ul>
+<li>prevLeft的最后一个node: prevLeft <code>2. prevLeft.next = prev</code></li>
+<li>part里的最后一个node： prevLeft.next （没有删除的link）<code>1. prevLeft.next.next = curr</code></li>
+<li>part里的第一个node: prev （遍历的最后一轮）</li>
+<li>prevRight的第一个node: curr （遍历的最后一轮）</li>
+</ul>
+<h3 id="reverse-之头插法"><a class="header" href="#reverse-之头插法">Reverse 之头插法</a></h3>
+<!-- WIP TODO -->
+<h2 id="hashmap--linked-list"><a class="header" href="#hashmap--linked-list">Hashmap + Linked List</a></h2>
+<h3 id="copy-list-with-random-pointer"><a class="header" href="#copy-list-with-random-pointer">Copy List with Random Pointer</a></h3>
+<p>把node的val放到hashmap里，再遍历linklist。把next和random的link建立起来。所以说是用hashmap建立了node和copynode的映射关系，可以在二次遍历的时候填充其他的link。</p>
+<h3 id="lru"><a class="header" href="#lru">LRU</a></h3>
+<p>双向链表，并且每个node有key，value,存放在hashmap里.</p>
+<p>双向链表的初始化: </p>
+<pre><code class="language-python">self.left.next = self.right
+self.right.prev = self.left
+</code></pre>
+<p>先初始化一个Node Class. get操作简单，在hashmap里找item，并且更新下存储的顺序，用到了基础的操作insert和remove。先remove再insert。put的话，需要删除当前key对应的node，并且check capcity，如果满了就<code>remove</code>最前面的node，insert新的node。</p>
+<p>关于insert 和 remove，insert需要在链表的尾部，做指针的更新。remove需要找到node后，更新前后的link。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="tree"><a class="header" href="#tree">Tree</a></h1>
+<h2 id="bfs"><a class="header" href="#bfs">BFS</a></h2>
+<ul>
+<li>declare a queue</li>
+</ul>
+<pre><code class="language-python">queue = deque([root])
+</code></pre>
+<ul>
+<li>pop from queue<code>popleft</code></li>
+</ul>
+<pre><code class="language-python">node = queue.popleft()
+</code></pre>
+<h2 id="dfs"><a class="header" href="#dfs">DFS</a></h2>
+<p>最简单的，base case+recursion on chilren</p>
+<p>稍微复杂一点，加help function，在help function里recursion</p>
+<h2 id="recursion"><a class="header" href="#recursion">recursion</a></h2>
+<p><code>Construct Binary Tree from Preorder and Inorder Traversal</code>这个题目很巧妙，第一次想不出来办法的那种，貌似有点想出来，但还是看答案才恍然大悟。通过root来分array，递归的建立左右子树。</p>
+<h2 id="binary-search-tree"><a class="header" href="#binary-search-tree">Binary Search Tree</a></h2>
+<p>基本是需要inorder的遍历,需要helper函数.</p>
+<ul>
+<li>在helper函数外声明全局变量(1个是result,1个是prev,都声明为<code>None</code>)</li>
+<li>help函数
+<ul>
+<li>首先判断是否有node和res是否不是None,是的话就返回</li>
+<li>递归左子树</li>
+<li>如果prev不是None,就更新result和prev</li>
+<li>更新prev</li>
+<li>递归右子树</li>
+</ul>
+</li>
+<li>调用helper函数</li>
+<li>return res</li>
+</ul>
+<h3 id="example"><a class="header" href="#example">example</a></h3>
+<pre><code class="language-python">class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -&gt; bool:
+        self.isbst = None
+        self.prev = None
+        def dfs(node):
+            if not node or self.isbst is not None:
+                return
+            dfs(node.left)
+            if self.prev is not None:
+                if self.prev &gt;= node.val:
+                    self.isbst = False
+                    return
+            self.prev = node.val
+            dfs(node.right)
+        dfs(root)
+        return True if self.isbst == None else False
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="array-3"><a class="header" href="#array-3">Array</a></h1>
+<h2 id="sort"><a class="header" href="#sort">Sort</a></h2>
+<ul>
+<li>intervals.sort(key=lambda x: x[0])</li>
+<li>will return NONE, change the original array</li>
+</ul>
+<h2 id="deque"><a class="header" href="#deque">deque</a></h2>
+<ul>
+<li>appendleft</li>
+<li>insert(0, x)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="string-methods"><a class="header" href="#string-methods">string methods</a></h1>
+<h2 id="combine-2-strings-to-hashmap"><a class="header" href="#combine-2-strings-to-hashmap">Combine 2 strings to hashmap</a></h2>
+<pre><code class="language-python">zip(s1, s2)
+input: s1 = &quot;abc&quot;, s2 = &quot;xyz&quot;
+output: [('a', 'x'), ('b', 'y'), ('c', 'z')]
+</code></pre>
+<h2 id="the-1st-char-index-of-string"><a class="header" href="#the-1st-char-index-of-string">the 1st char index of string</a></h2>
+<pre><code class="language-python">strs.index('h')
+input: strs = &quot;hello&quot;
+output: 0
+</code></pre>
+<h2 id="split-string-to-list"><a class="header" href="#split-string-to-list">split string to list</a></h2>
+<pre><code class="language-python">strs.split()
+input: strs = &quot;hello world&quot;
+output: ['hello', 'world']
+strs.split('/')
+input: strs = &quot;hello/world&quot;
+output: ['hello', 'world']
+</code></pre>
+<blockquote>
+<p>it can split by any character, by default is space</p>
+</blockquote>
+<h2 id="count-the-char-in-string"><a class="header" href="#count-the-char-in-string">Count the char in string</a></h2>
+<pre><code class="language-python">str_count = collections.Counter(strs)
+</code></pre>
+<h2 id="判断字符串的condition"><a class="header" href="#判断字符串的condition">判断字符串的condition</a></h2>
+<ul>
+<li>startswith
+<ul>
+<li>
+<pre><code class="language-python">&quot;hello&quot;.startswith(&quot;h&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
+<li>endswith
+<ul>
+<li>
+<pre><code class="language-python">&quot;hello&quot;.endswith(&quot;o&quot;)
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="iterate-string"><a class="header" href="#iterate-string">iterate string</a></h2>
+<ul>
+<li>不需要用range，可以用slice</li>
+</ul>
+<pre><code class="language-python">for string in strs[1:]:
+    if string.startswith(strs[0]):
+        continue
+    else:
+        return False
+return True
+</code></pre>
+<h2 id="reverse-string"><a class="header" href="#reverse-string">reverse string</a></h2>
+<ul>
+<li>用slice, 返回新的list</li>
+</ul>
+<pre><code class="language-python">strs = strs[::-1]
+</code></pre>
+<ul>
+<li>用reverse，返回None</li>
+</ul>
+<pre><code class="language-python">strs = list(strs)
+strs.reverse()
+strs = &quot;&quot;.join(strs)
+</code></pre>
+<h2 id="remove-space"><a class="header" href="#remove-space">remove space</a></h2>
+<ul>
+<li>strip</li>
+</ul>
+<pre><code class="language-python">&quot;  hello  &quot;.strip()
+</code></pre>
+<ul>
+<li>lstrip</li>
+</ul>
+<pre><code class="language-python">&quot;  hello  &quot;.lstrip()
+</code></pre>
+<h2 id="split-string-to-list-1"><a class="header" href="#split-string-to-list-1">split string to list</a></h2>
+<ul>
+<li>split</li>
+</ul>
+<pre><code class="language-python">&quot;hello world&quot;.split()
+</code></pre>
+<h2 id="join-list-to-string"><a class="header" href="#join-list-to-string">join list to string</a></h2>
+<ul>
+<li>join</li>
+</ul>
+<pre><code class="language-python">&quot; &quot;.join([&quot;hello&quot;, &quot;world&quot;])
+</code></pre>
+<h2 id="replace"><a class="header" href="#replace">replace</a></h2>
+<ul>
+<li>replace</li>
+</ul>
+<pre><code class="language-python">&quot;hello world&quot;.replace(&quot;world&quot;, &quot;python&quot;)
+</code></pre>
+<h2 id="lower-and-upper"><a class="header" href="#lower-and-upper">lower and upper</a></h2>
+<ul>
+<li>lower</li>
+</ul>
+<pre><code class="language-python">&quot;HELLO WORLD&quot;.lower()
+</code></pre>
+<ul>
+<li>upper</li>
+</ul>
+<pre><code class="language-python">&quot;hello world&quot;.upper()
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="directory"><a class="header" href="#directory">Directory</a></h1>
+<h1 id="how-to-initialize-a-directory"><a class="header" href="#how-to-initialize-a-directory">how to initialize a directory</a></h1>
+<pre><code class="language-python">cols=collections.defaultdict(list)
+cols=collections.defaultdict(set)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="iterate"><a class="header" href="#iterate">iterate</a></h1>
+<h2 id="iterate-listaray"><a class="header" href="#iterate-listaray">iterate list/aray</a></h2>
+<pre><code class="language-python">for i, num in enumerate(nums):
+    print(i, num)
+</code></pre>
+<h2 id="iterate-hashmapdict"><a class="header" href="#iterate-hashmapdict">iterate hashmap/dict</a></h2>
+<pre><code class="language-python">for key, value in hashmap.items():
+    print(key, value)
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="assignment"><a class="header" href="#assignment">Assignment</a></h1>
+<h2 id="preface-4"><a class="header" href="#preface-4">preface</a></h2>
+<p>记录一些可以提高coding interivew的points和总结些经验</p>
+<h2 id="points-1"><a class="header" href="#points-1">points</a></h2>
+<pre><code>Code style / issues  代码样式 / 问题
+
+Tests — missing cases, bugs, etc
+测试 — 缺失的 case、bug 等
+
+Accessibility  可及性
+
+Performance issues  性能问题
+
+framework misuse / opportunities to learn
+框架滥用/学习机会
+
+issues with data fetching / changing
+数据获取/更改问题
+
+responsive design issues  响应式设计问题
+
+design mismatches  设计不匹配
+
+for React, basically every use of useEffect should be examined and attempts should be made to remove them unless absolutely necessary
+对于 React，基本上应该检查每次使用 useEffect，除非绝对必要，否则应该尝试删除它们
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="preface-5"><a class="header" href="#preface-5">Preface</a></h1>
+<p>记录一些overall的问题和其他part的重点记录和自己不懂的</p>
+<h1 id="general-problem"><a class="header" href="#general-problem">General Problem</a></h1>
+<ul>
+<li>code assignment 可能代码写的不够熟练 基础的掌握不牢固</li>
+<li>react的quiz可能口头无法表达清楚</li>
+<li>算法题太过于死磕，避免hard和medium里的难题，重点是快速的复习一轮</li>
+<li>system design只准备了前端，而且很久没有看了</li>
+<li>js html css的基础也不牢固，难以在短时间写出好代码</li>
+<li>不要花时间在做项目上了，现在的portfolio已经可以拿到不少面试了</li>
+<li>简历加一个summary，不要停止投简历，不要害怕面试</li>
+<li>不要想太多准备面试之外的破事儿，需要专注</li>
+<li>需要多一点techincal的细节</li>
+</ul>
+<h1 id="todo"><a class="header" href="#todo">TODO</a></h1>
+<ul>
+<li>重构bq的故事加一些technical的细节，逐渐迭代</li>
+<li>react的ts写法 #learn</li>
+<li>给过去的项目加css特效 #brainwithbo</li>
+<li>看之前odin的项目 #reviewcode 找一些忘记的点和enhance一些practice</li>
+<li>给echo项目加更多的验证 #johnudemy
+<ul>
+<li>post支持分行</li>
+</ul>
+</li>
+<li>form的基本的正则表达式整理 #easynohurry</li>
+</ul>
+<h1 id="overall-problemimportant-points"><a class="header" href="#overall-problemimportant-points">Overall Problem/important points</a></h1>
+<ul>
+<li>optimization method examples..
+<ul>
+<li>可以用在expression和bq的例子里</li>
+</ul>
+</li>
+</ul>
+<h1 id="react-qa"><a class="header" href="#react-qa">React QA</a></h1>
+<h2 id="code"><a class="header" href="#code">code</a></h2>
+<ul>
+<li>Create a custom react hook</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="bq"><a class="header" href="#bq">BQ</a></h1>
+<h2 id="introduction"><a class="header" href="#introduction">introduction</a></h2>
+<h2 id="projectproblem-solved"><a class="header" href="#projectproblem-solved">Project/problem solved</a></h2>
+<h2 id="why-join-us"><a class="header" href="#why-join-us">why join us</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="job-record"><a class="header" href="#job-record">Job Record</a></h1>
+<blockquote>
+<p>记录找工作的一些问题(reality),来帮助自己长点心</p>
+</blockquote>
+<h2 id="09-15-2024"><a class="header" href="#09-15-2024">09-15-2024</a></h2>
+<p>有个startup的兼职要价太高,把我鸽了.教训就是兼职要价要稳不要求险.
+还有个code 测试,估计过不了.发现给我面试的第一轮都是无人的(remote),能有人的第二轮也挂.感觉我拿到的interview不仅少而且质量很低,我有点想放弃remote job,感觉自己经验真的不够,但还是想趁着这段时间复习下tech相关的基础,再多练习下,继续投,实在不行,就只能先暂时放弃了.</p>
+<h2 id="09-16-2024"><a class="header" href="#09-16-2024">09-16-2024</a></h2>
+<p>在看speechify的面试准备,感觉有点不够general,打算复习下react,积累一些input来interview用,持续刷题ing</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="apply-record"><a class="header" href="#apply-record">Apply Record</a></h1>
+<h2 id="09-15-2024-1"><a class="header" href="#09-15-2024-1">09-15-2024</a></h2>
+<p>没申请,但发现hn的job board不错.最近懒得申请,明天我一定申请!!!</p>
+<h2 id="09-16-2024-1"><a class="header" href="#09-16-2024-1">09-16-2024</a></h2>
+<p>申请了很多,找到了subreddit和linkedin的jobs的cold im. 申请是个number game,收集了一些motivation.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="resume-record"><a class="header" href="#resume-record">Resume Record</a></h1>
+<h2 id="09-18-2024"><a class="header" href="#09-18-2024">09-18-2024</a></h2>
+<p>改了下中文的简历，删除了很多，到最后几乎什么都没有了，我想不出我在公司的最大贡献是啥，也想不出自己的亮点是啥，而且英文汉化感觉都是虚假的玩意，把个人信息加了wechat.简历的exp里的东西英文也得改，我通过yc学到的最重要的一点就是point不要超过1行，不写tech的细节。当这么做还是需要很多的思考。</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="behavior-mock-record"><a class="header" href="#behavior-mock-record">Behavior mock record</a></h1>
+<h2 id="preface-6"><a class="header" href="#preface-6">preface</a></h2>
+<p>record some mock details and cons I made to improve it be better</p>
+<h2 id="09-15-2024-2"><a class="header" href="#09-15-2024-2">09-15-2024</a></h2>
+<h3 id="overall"><a class="header" href="#overall">Overall</a></h3>
+<p>印度老哥manager,特别流畅和真诚,让我特别放松,过去都是照本宣科,第一次脱稿回答,过去的input犹如自己的武器一般可以自由的排列组合,但还需要持续的输入和练习.也发现了STAR中我卡点的几个问题.一个是general的opinion(对问题)不太会造句子.2是我的story样本太少,还需要输入.第3是结尾需要用上帝视角来说outcome,适当用number和value(customer value)来包装.第4是结尾可以reverse question来询问是否有疑问和是否需要更加深入.最后就是intro需要更加的abstract和general,不能举太多的例子.</p>
+<h3 id="questions"><a class="header" href="#questions">questions</a></h3>
+<ul>
+<li>wrong..team blocking...difficult problem...failure</li>
+<li>tell me about a conflict with your team
+<ul>
+<li>requirement could cause app crash, analyse and collect data to prove it</li>
+</ul>
+</li>
+<li>tell me about a time I am wrong
+<ul>
+<li>some error hanpened, I thought its not my code, but its mine(shit example)</li>
+</ul>
+</li>
+<li>tell me a time team blocked you
+<ul>
+<li>api document not clear, discuss with manager and ask for help</li>
+</ul>
+</li>
+<li>tell me a difficult problem you met and how you solve it
+<ul>
+<li>complex accident, identify and solve it by fixing code, do systemtical check with code and through analysis</li>
+</ul>
+</li>
+<li>tell me a failure you met and how you solve it
+<ul>
+<li>deploy issue caused not test well</li>
+</ul>
+</li>
+<li>tell me a success you met and how you solve it
+<ul>
+<li>requirement solving process</li>
+</ul>
+</li>
+</ul>
+<h2 id="09-17-2024"><a class="header" href="#09-17-2024">09-17-2024</a></h2>
+<h3 id="overall-1"><a class="header" href="#overall-1">Overall</a></h3>
+<p>脱稿阅读,这次是同龄的美国小哥，问的问题还是很经典。总体上，需要在例子里强调和不同的team的合作，和自己和组内包括manager的沟通。</p>
+<ul>
+<li>problem solving
+<ul>
+<li>举例子，性能优化，通过分解问题，定位问题(感觉需要换个例子，需要继续input素材吧)</li>
+</ul>
+</li>
+<li>conflict
+<ul>
+<li>需求引起性能问题（感觉老说性能有点重复）</li>
+</ul>
+</li>
+<li>tight timeline
+<ul>
+<li>排优先级，及时沟通，MVP</li>
+</ul>
+</li>
+<li>为啥换工作
+<ul>
+<li>寻求新的机会</li>
+</ul>
+</li>
+<li>最challenging的project
+<ul>
+<li>讲的dashboard，但没有讲<strong>其中遇到的问题</strong>，下次需要注意</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="basic-2"><a class="header" href="#basic-2">Basic</a></h1>
+<h2 id="sentence"><a class="header" href="#sentence">sentence</a></h2>
+<ul>
+<li>so on and so forth</li>
+</ul>
+<h2 id="tip"><a class="header" href="#tip">Tip</a></h2>
+<blockquote>
+<p>clarify thought, flexibility, knowledge</p>
+</blockquote>
+<ul>
+<li>Don't dive into detail</li>
+<li>diff architecture</li>
+<li>keep it simple stupid</li>
+<li>make justifications for points you made</li>
+<li>discuss pros and cons of choices</li>
+</ul>
+<h2 id="load-balance"><a class="header" href="#load-balance">load balance</a></h2>
+<blockquote>
+<p>many request to servers, use hashmap to map into servers</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="code-splitting-javascript-for-faster-performance"><a class="header" href="#code-splitting-javascript-for-faster-performance">Code splitting JavaScript for faster performance</a></h1>
+<ul>
+<li>Split on the page level</li>
+<li>Lazy loading resources within a page</li>
+</ul>
+<h2 id="3-tier"><a class="header" href="#3-tier">3 tier</a></h2>
+<ul>
+<li>load UI skeletons for initial loading </li>
+<li>fully render all above-the-fold content</li>
+<li>including logging code and subscriptions for live-updating data.</li>
+</ul>
+<h1 id="keyboard-shortcuts"><a class="header" href="#keyboard-shortcuts">Keyboard shortcuts</a></h1>
+<h1 id="error-states"><a class="header" href="#error-states">Error States</a></h1>
+<h1 id="seo"><a class="header" href="#seo">SEO</a></h1>
+<ul>
+<li>readable URL</li>
+</ul>
+<h1 id="dynamic-rendering"><a class="header" href="#dynamic-rendering">dynamic rendering</a></h1>
+<ul>
+<li>render different version for users and crawlers(Static html)</li>
+</ul>
+<h1 id="internationalization"><a class="header" href="#internationalization">Internationalization</a></h1>
+<p>Have dedicated pages translated in the supported languages.
+Make the language and country selector very prominent (e.g. in the navbar).
+For listing details which are contributed by users, add an automatic translation feature so that users visiting country X but don't speak country X's language can understand the listing in their native language.
+Set the lang attribute on the html tag (e.g. <html lang="zh-cn">) to tell browsers and search engines the language of the page which helps browsers offer a translation of the page. This is also important for SEO.
+Enable locale-specific UI:
+Using the :lang() CSS pseudo-class to change display
+Right-to-left languages
+Using CSS Logical Properties
+HTML's dir attribute
+CSS direction: rtl
+Consider differences in the length of text in different languages.
+Do not concatenate translated strings.
+Do not put text in images.
+Be mindful of how colors are perceived in different cultures.</p>
+<h1 id="performance"><a class="header" href="#performance">Performance</a></h1>
+<h2 id="image-1"><a class="header" href="#image-1">Image</a></h2>
+<ul>
+<li>Image carousel</li>
+<li>Image preloading/lazy loading</li>
+<li>use webp</li>
+</ul>
+<h2 id="code-split"><a class="header" href="#code-split">Code split</a></h2>
+<h2 id="performance-monitor"><a class="header" href="#performance-monitor">Performance monitor</a></h2>
+<ul>
+<li>Light house </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements"><a class="header" href="#requirements">Requirements</a></h1>
+<h2 id="devices"><a class="header" href="#devices">Devices</a></h2>
+<ul>
+<li>Desktop</li>
+<li>Tablet</li>
+<li>mobile</li>
+</ul>
+<h2 id="qa"><a class="header" href="#qa">QA</a></h2>
+<ul>
+<li>What are the most critical aspects of the component?
+<ul>
+<li>core features</li>
+</ul>
+</li>
+<li>
+<h2 id="what-are-the-non-functional-requirements"><a class="header" href="#what-are-the-non-functional-requirements">What are the non-functional requirements?</a></h2>
+</li>
+<li>what kind of xx should be supported?
+<ul>
+<li>format(text, image media)</li>
+</ul>
+</li>
+<li>what devices will this component be used on?
+<ul>
+<li>Primarily desktop but it should also be usable on tablet and mobile.</li>
+</ul>
+</li>
+<li>Do we need to support fuzzy search?</li>
+</ul>
+<h1 id="architecture"><a class="header" href="#architecture">Architecture</a></h1>
+<ul>
+<li>Server: Provide http APIs to fetch data and to create xx</li>
+<li>Controller: control the flow of data within the application and makes network requests to the server</li>
+<li>client store: store data needed across the whole application. In the context of xx, most of the data in the store will be server-originated data needed by the xx UI</li>
+<li>UI: Contains a list of xx and Ui for xx
+<ul>
+<li>classification</li>
+</ul>
+</li>
+<li>Rendering approach
+<ul>
+<li>Server side rendering
+<ul>
+<li>Friendly for SEO</li>
+</ul>
+</li>
+<li>Client side rendering
+<ul>
+<li>interactive content</li>
+</ul>
+</li>
+<li>Hybrid</li>
+</ul>
+</li>
+<li>
+<h2 id="single-page-application-spa-or-multi-page-application-mpa"><a class="header" href="#single-page-application-spa-or-multi-page-application-mpa">Single-page application (SPA) or Multi-page application (MPA)?</a></h2>
+</li>
+</ul>
+<h1 id="data-model"><a class="header" href="#data-model">Data model</a></h1>
+<table><thead><tr><th>Entity</th><th>Source</th><th>Belongs to</th><th>Fields</th></tr></thead><tbody>
+<tr><td>Feed</td><td>Server</td><td>Feed UI</td><td>posts,pagination</td></tr>
+<tr><td>Posts</td><td>Server</td><td>Feed Posts</td><td>id, created_time, content, author, reactions, image_url</td></tr>
+<tr><td>User</td><td>Server</td><td>ClientStore</td><td>id, name, avatar</td></tr>
+</tbody></table>
+<h1 id="api"><a class="header" href="#api">API</a></h1>
+<ul>
+<li>Http method</li>
+<li>Path</li>
+<li>description</li>
+<li>parameters</li>
+</ul>
+<h1 id="optimization"><a class="header" href="#optimization">Optimization</a></h1>
+<p>List virtualization
+列表虚拟化
+Accessible forms
+无障碍表格
+Normalized store
+正规化门店</p>
+<h2 id="performance-1"><a class="header" href="#performance-1">Performance</a></h2>
+<h3 id="optimized-images"><a class="header" href="#optimized-images">Optimized images</a></h3>
+<ul>
+<li>Image carousel</li>
+<li>Image preloading/lazy loading</li>
+<li>use webp</li>
+</ul>
+<h3 id="lazy-loading-and-code-splitting-javascript-for-faster-performance"><a class="header" href="#lazy-loading-and-code-splitting-javascript-for-faster-performance">Lazy loading and Code splitting JavaScript for faster performance</a></h3>
+<ul>
+<li>Split on the page level</li>
+<li>Lazy loading resources within a page</li>
+</ul>
+<h3 id="performance-monitor-1"><a class="header" href="#performance-monitor-1">Performance monitor</a></h3>
+<ul>
+<li>Light house </li>
+</ul>
+<h2 id="user-experience"><a class="header" href="#user-experience">User Experience</a></h2>
+<h2 id="accessibility"><a class="header" href="#accessibility">Accessibility</a></h2>
+<h3 id="keyboard-shortcuts-1"><a class="header" href="#keyboard-shortcuts-1">Keyboard shortcuts</a></h3>
+<h2 id="seo-1"><a class="header" href="#seo-1">SEO</a></h2>
+<ul>
+<li>readable URL</li>
+</ul>
+<h2 id="internationalization-1"><a class="header" href="#internationalization-1">Internationalization</a></h2>
+<p>Have dedicated pages translated in the supported languages.
+Make the language and country selector very prominent (e.g. in the navbar).
+For listing details which are contributed by users, add an automatic translation feature so that users visiting country X but don't speak country X's language can understand the listing in their native language.
+Set the lang attribute on the html tag (e.g. <html lang="zh-cn">) to tell browsers and search engines the language of the page which helps browsers offer a translation of the page. This is also important for SEO.
+Enable locale-specific UI:
+Using the :lang() CSS pseudo-class to change display
+Right-to-left languages
+Using CSS Logical Properties
+HTML's dir attribute
+CSS direction: rtl
+Consider differences in the length of text in different languages.
+Do not concatenate translated strings.
+Do not put text in images.
+Be mindful of how colors are perceived in different cultures.</p>
+<h2 id="3-tier-1"><a class="header" href="#3-tier-1">3 tier</a></h2>
+<ul>
+<li>load UI skeletons for initial loading </li>
+<li>fully render all above-the-fold content</li>
+<li>including logging code and subscriptions for live-updating data.</li>
+</ul>
+<h2 id="error-states-1"><a class="header" href="#error-states-1">Error States</a></h2>
+<p>Clearly display error states if any network requests have failed, or when there's no network connectivity.</p>
+<h2 id="dynamic-rendering-1"><a class="header" href="#dynamic-rendering-1">dynamic rendering</a></h2>
+<ul>
+<li>render different version for users and crawlers(Static html)</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements-1"><a class="header" href="#requirements-1">Requirements</a></h1>
+<h2 id="core-2"><a class="header" href="#core-2">Core</a></h2>
+<ul>
+<li>Browse news feed containing posts by user and friends</li>
+<li>Liking and react to feeds</li>
+<li>Create and publish new feeds</li>
+<li>Support image-based posts </li>
+<li>Infinite Scroll</li>
+<li>mobile device</li>
+</ul>
+<h1 id="architecture-1"><a class="header" href="#architecture-1">Architecture</a></h1>
+<p><img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/3WJBbctest.png" alt="3WJBbctest" /></p>
+<h1 id="data-model-1"><a class="header" href="#data-model-1">Data model</a></h1>
+<h1 id="api-1"><a class="header" href="#api-1">API</a></h1>
+<h1 id="optimization-1"><a class="header" href="#optimization-1">Optimization</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="instagram"><a class="header" href="#instagram">instagram</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements-2"><a class="header" href="#requirements-2">Requirements</a></h1>
+<h2 id="core-3"><a class="header" href="#core-3">Core</a></h2>
+<ul>
+<li>browsing products</li>
+<li>add to cart </li>
+<li>check out successfully</li>
+</ul>
+<h2 id="pages"><a class="header" href="#pages">Pages</a></h2>
+<ul>
+<li>product list page
+<ul>
+<li>name, image, price</li>
+</ul>
+</li>
+<li>product detail page
+<ul>
+<li>name, image(multiple), desc, price</li>
+</ul>
+</li>
+<li>cart page</li>
+<li>checkout page</li>
+</ul>
+<h2 id="international"><a class="header" href="#international">international</a></h2>
+<ul>
+<li>diff area diff age</li>
+</ul>
+<h2 id="non-functional"><a class="header" href="#non-functional">non-functional</a></h2>
+<ul>
+<li>load under 2 seconds</li>
+<li>respond quickly</li>
+</ul>
+<h2 id="devices-1"><a class="header" href="#devices-1">devices</a></h2>
+<p>laptop, tablet, mobile</p>
+<h2 id="security"><a class="header" href="#security">security</a></h2>
+<p>sign in to purchase</p>
+<h1 id="architecture-2"><a class="header" href="#architecture-2">Architecture</a></h1>
+<p>Pages:</p>
+<pre><code>Product List: Displays a list of product items that can be added to the cart.
+Product Details: Displays details of a single product along with additional details.
+Cart: Displays added cart items and allows changing of quantity and deleting added items.
+Checkout: Displays address and payment forms the user has to complete in order to place the order.
+</code></pre>
+<h2 id="render"><a class="header" href="#render">render</a></h2>
+<p>SEO - ssr - mpa/spa(yes)</p>
+<h1 id="data-model-2"><a class="header" href="#data-model-2">Data model</a></h1>
+<ul>
+<li>ProductList server products, pagination </li>
+<li>prodcut server name, desc, unit_price, currency, primary_img, image_url</li>
+<li>cart items, client store, total price, currency</li>
+<li>address, user input, checkout, name, coutry, stree, city</li>
+<li>payment, card_num, card_expiry, cvv</li>
+</ul>
+<h1 id="api-2"><a class="header" href="#api-2">API</a></h1>
+<ul>
+<li>get /prodcuts (size, page, country)
+<ul>
+<li>specific pages</li>
+<li>not update frequently
+<ul>
+<li>not stale</li>
+</ul>
+</li>
+<li>total results</li>
+</ul>
+</li>
+<li>get /products/{id}</li>
+<li>post /cart/products</li>
+<li>put /cart/products/{id}</li>
+<li>delete /cart/products/{id}</li>
+<li></li>
+</ul>
+<h1 id="optimization-2"><a class="header" href="#optimization-2">Optimization</a></h1>
+<h2 id="performance-2"><a class="header" href="#performance-2">performance</a></h2>
+<ul>
+<li>prefetch</li>
+<li>lazy loading, prioritize</li>
+<li>code spliting</li>
+</ul>
+<h2 id="seo-2"><a class="header" href="#seo-2">seo</a></h2>
+<ul>
+<li>title meta</li>
+<li>sitemap - crawler</li>
+</ul>
+<h2 id="image-2"><a class="header" href="#image-2">image</a></h2>
+<ul>
+<li>webp</li>
+<li>cdn</li>
+<li>priority</li>
+<li>lazy load below the fold images</li>
+<li>load critical images early.</li>
+</ul>
+<h2 id="pay"><a class="header" href="#pay">pay</a></h2>
+<ul>
+<li>addresss diff from diff area
+<ul>
+<li>use stripe</li>
+</ul>
+</li>
+<li>auto complete payment form</li>
+</ul>
+<h2 id="accessibilty"><a class="header" href="#accessibilty">accessibilty</a></h2>
+<ul>
+<li>use more semantic elements  other than div</li>
+<li>img with alt</li>
+<li>input with label
+<ul>
+<li>aria-describedby</li>
+<li>aria-live=&quot;assertive</li>
+</ul>
+</li>
+<li>input with type
+<ul>
+<li>pattern, minlength, maxlength</li>
+</ul>
+</li>
+</ul>
+<h2 id="security-1"><a class="header" href="#security-1">security</a></h2>
+<ul>
+<li>https
+<ul>
+<li>especially for payment</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-experience-1"><a class="header" href="#user-experience-1">user experience</a></h2>
+<ul>
+<li>store content to cookie</li>
+<li>Make promo code fields less prominent so that people without promo codes</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements-3"><a class="header" href="#requirements-3">Requirements</a></h1>
+<h2 id="core-4"><a class="header" href="#core-4">Core</a></h2>
+<ul>
+<li>send a message to a user</li>
+<li>receive a message from a user</li>
+<li>see one's chat history with a user</li>
+</ul>
+<h2 id="real-time"><a class="header" href="#real-time">real time?</a></h2>
+<ul>
+<li>users should be able to see each other's messages in real time without refreshing the page</li>
+</ul>
+<h2 id="support-which-format-of-message"><a class="header" href="#support-which-format-of-message">support which format of message?</a></h2>
+<ul>
+<li>support text with emojis, discuss image later</li>
+</ul>
+<h2 id="does-the-app-support-offline-mode"><a class="header" href="#does-the-app-support-offline-mode">Does the app support offline mode?</a></h2>
+<ul>
+<li>outgoing messages should be saved locally</li>
+<li>incoming messages should be saved locally</li>
+<li>when the app is offline, the user should be able to see the messages he/she has sent</li>
+</ul>
+<h2 id="does-the-app-support-multiple-users"><a class="header" href="#does-the-app-support-multiple-users">Does the app support multiple users?</a></h2>
+<ul>
+<li>we can assume 1:1 msg service</li>
+</ul>
+<h1 id="architecture-3"><a class="header" href="#architecture-3">Architecture</a></h1>
+<h2 id="tricky-scenarios"><a class="header" href="#tricky-scenarios">Tricky scenarios</a></h2>
+<ul>
+<li>using the application on different tabs in same browser</li>
+<li>Using the application on different devices/browsers</li>
+<li>Offline mode
+<ul>
+<li>Outgoing messages should be retried when the app is online</li>
+<li>if its too long ago, no longer makes sense to retry it.</li>
+</ul>
+</li>
+</ul>
+<h2 id="client-side-database"><a class="header" href="#client-side-database">Client-side Database</a></h2>
+<ul>
+<li>can solve diff tabs in same browser</li>
+</ul>
+<h2 id="data-syncer"><a class="header" href="#data-syncer">Data Syncer</a></h2>
+<p>Msg status</p>
+<ul>
+<li>sending</li>
+<li>sent</li>
+<li>delivered</li>
+<li>read</li>
+<li>failed</li>
+</ul>
+<h2 id="rendering"><a class="header" href="#rendering">Rendering</a></h2>
+<ul>
+<li>
+<p>highly interactive</p>
+</li>
+<li>
+<p>accessed when logged in</p>
+</li>
+<li>
+<p>do not need to be indexed by search engine</p>
+</li>
+<li>
+<p>fast initial load speed</p>
+</li>
+<li>
+<p>client-side rendering and single-page application</p>
+</li>
+<li>
+<p>server-side rendering (SSR) with client-side hydration(Dont need SEO Friendly)</p>
+</li>
+</ul>
+<h1 id="data-model-3"><a class="header" href="#data-model-3">Data model</a></h1>
+<h2 id="client-side-database-1"><a class="header" href="#client-side-database-1">Client-side Database</a></h2>
+<ul>
+<li>Conversation - Conversation List</li>
+<li>Msg - Conversation </li>
+<li>User - ALL</li>
+<li>ConversationUser</li>
+<li>DraftMsg - Conversation - </li>
+<li>SendMSgRequest  - Msg Scheduler - (pending, in_flight, fail, success)</li>
+</ul>
+<blockquote>
+<p>DraftMsg and SendMSgRequest should be in client db for session synchronization</p>
+</blockquote>
+<h2 id="client-only-state"><a class="header" href="#client-only-state">Client-only state</a></h2>
+<ul>
+<li>Selected conversation</li>
+<li>conversation scroll position</li>
+<li>conversation outgoing msg</li>
+</ul>
+<h1 id="api-3"><a class="header" href="#api-3">API</a></h1>
+<h2 id="send-msg"><a class="header" href="#send-msg">send msg</a></h2>
+<ul>
+<li>msg --&gt; sending</li>
+<li>sendMsgRequest --&gt; pending</li>
+<li>UI --&gt; sending</li>
+<li>DraftMsg &lt;-- deleted</li>
+<li>MsgScheduler --&gt; syncing <code>pending</code> with the server</li>
+</ul>
+<h2 id="sync-outgoing-msg"><a class="header" href="#sync-outgoing-msg">sync outgoing msg</a></h2>
+<blockquote>
+<p>Msg scheduler should monitor the table of outgoing msg.</p>
+</blockquote>
+<ul>
+<li>pending --&gt; in_flight</li>
+<li>in_flight --&gt; check timestamp
+<ul>
+<li>check the last_send_at timestamp, if exceed, updated to fail, and fail_count by 1</li>
+</ul>
+</li>
+<li>fail 
+<ul>
+<li>retry after a while, delay duration will increase exponentially with fail_count</li>
+</ul>
+</li>
+</ul>
+<h2 id="server-events"><a class="header" href="#server-events">server events</a></h2>
+<h3 id="msg-sent"><a class="header" href="#msg-sent">msg sent</a></h3>
+<ul>
+<li>update message status to <code>sent</code></li>
+<li>clean up this msg in msg scheduler
+<ul>
+<li>remove msg in sendMsgRequest table, no longer pending or inflight</li>
+<li>remove any tasks in the task queue</li>
+</ul>
+</li>
+<li>update UI</li>
+</ul>
+<h3 id="msg-delivered"><a class="header" href="#msg-delivered">msg delivered</a></h3>
+<ul>
+<li>update message status to <code>delivered</code></li>
+<li>update UI</li>
+</ul>
+<h3 id="msg-failed"><a class="header" href="#msg-failed">msg failed</a></h3>
+<ul>
+<li>updated status in <code>sendMsgRequest</code> to fail, and fail_count by 1
+<ul>
+<li>we don't need to modify msg table to status fail, until we retry it again</li>
+</ul>
+</li>
+<li>update UI</li>
+</ul>
+<h3 id="incoming_msg"><a class="header" href="#incoming_msg">incoming_msg</a></h3>
+<ul>
+<li>Append new msg into <code>Message</code> table
+<ul>
+<li>Create a new row in <code>conversation</code></li>
+<li>create a new row for msg's sender into <code>User</code> table if not exist</li>
+</ul>
+</li>
+<li>Update UI</li>
+</ul>
+<h3 id="sync"><a class="header" href="#sync">sync</a></h3>
+<ul>
+<li>First connect to server
+<ul>
+<li>Client's last update timestamp</li>
+<li>Each conversation's cursor</li>
+</ul>
+</li>
+</ul>
+<h2 id="fetch-conversations"><a class="header" href="#fetch-conversations">fetch conversations</a></h2>
+<ul>
+<li></li>
+</ul>
+<h2 id="fetch-conversation-msgs"><a class="header" href="#fetch-conversation-msgs">fetch conversation msgs</a></h2>
+<h1 id="optimization-3"><a class="header" href="#optimization-3">Optimization</a></h1>
+<h2 id="client-side-db"><a class="header" href="#client-side-db">Client side DB</a></h2>
+<ul>
+<li>use indexedDB</li>
+<li>sync across tabs
+<ul>
+<li>BroadcastChannel</li>
+</ul>
+</li>
+</ul>
+<h3 id="problem-syncy-between-client-and-server"><a class="header" href="#problem-syncy-between-client-and-server">problem syncy between client and server</a></h3>
+<ul>
+<li>out of order msg</li>
+<li>fetch new msgs</li>
+<li>send out pending msgs</li>
+<li>unsupported environment like private</li>
+<li>storage limits</li>
+</ul>
+<h3 id="real-time-updates"><a class="header" href="#real-time-updates">real time updates</a></h3>
+<ul>
+<li>short polling</li>
+<li>long polling</li>
+<li>web sockets</li>
+</ul>
+<h2 id="network"><a class="header" href="#network">Network</a></h2>
+<ul>
+<li>offline
+<ul>
+<li>add msg into <code>sendMsgRequest</code></li>
+</ul>
+</li>
+<li>Failures
+<ul>
+<li>failed msgs should be retried later</li>
+</ul>
+</li>
+<li>Batching</li>
+<li>out of order</li>
+<li>disconnection</li>
+</ul>
+<h2 id="performance-3"><a class="header" href="#performance-3">Performance</a></h2>
+<ul>
+<li>Lazy load components dont need for initial load(popmodels and emoji picker)</li>
+<li>windowing/virtualization for long list of messages </li>
+</ul>
+<h2 id="accessibility-1"><a class="header" href="#accessibility-1">Accessibility</a></h2>
+<ul>
+<li>Msg composer
+<ul>
+<li>Enter</li>
+<li>shift+enter</li>
+</ul>
+</li>
+<li>Between conversations
+<ul>
+<li>search bar</li>
+<li>cmd + up/down</li>
+<li>cmd + number</li>
+</ul>
+</li>
+</ul>
+<h2 id="offline-support"><a class="header" href="#offline-support">offline support</a></h2>
+<ul>
+<li>PWAs(Progressive Web Apps) use service workers to cache assets</li>
+</ul>
+<h2 id="user-experience-2"><a class="header" href="#user-experience-2">User experience</a></h2>
+<h3 id="maintain-scroll-position"><a class="header" href="#maintain-scroll-position">Maintain scroll position</a></h3>
+<p>recalculate scroll position when new messages arrive</p>
+<ul>
+<li>new messages inserted at below</li>
+<li>above(search history)</li>
+<li>window resizing</li>
+<li>fixed height placeholder to rendering</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements-4"><a class="header" href="#requirements-4">Requirements</a></h1>
+<h2 id="core-5"><a class="header" href="#core-5">Core</a></h2>
+<ul>
+<li>cycle infinitely</li>
+<li>animate between images</li>
+</ul>
+<h1 id="architecture-4"><a class="header" href="#architecture-4">Architecture</a></h1>
+<ul>
+<li>ViewModel, model
+<ul>
+<li>tell image component to show which image</li>
+</ul>
+</li>
+<li>Image
+<ul>
+<li>display curr image</li>
+</ul>
+</li>
+<li>prev/next
+<ul>
+<li>tell viewModel to change curr image</li>
+</ul>
+</li>
+<li>progress dot
+<ul>
+<li>choose which image to show</li>
+</ul>
+</li>
+</ul>
+<h1 id="data-model-4"><a class="header" href="#data-model-4">Data model</a></h1>
+<blockquote>
+<p>only view model can store state and data</p>
+</blockquote>
+<h2 id="conf"><a class="header" href="#conf">conf</a></h2>
+<ul>
+<li>list of images(url, alt)</li>
+<li>transition duration</li>
+<li>height width of image</li>
+</ul>
+<h2 id="state"><a class="header" href="#state">state</a></h2>
+<ul>
+<li>index of image</li>
+<li>changed by button</li>
+</ul>
+<h1 id="api-4"><a class="header" href="#api-4">API</a></h1>
+<pre><code>&lt;ImageCarousel
+  images={[
+    { src: 'https://example.com/images/foo.jpg', alt: 'A foo' },
+    { src: 'https://example.com/images/bar.jpg', alt: 'A bar' },
+    /* More images if desired. */
+  ]}
+  transitionDuration={300}
+  height={500}
+  width={800}
+/&gt;
+</code></pre>
+<h2 id="advanced-options"><a class="header" href="#advanced-options">Advanced Options</a></h2>
+<ul>
+<li>autoplay
+<ul>
+<li>have a timer to keep changing image</li>
+<li>timer need to be restored or canceled if user changed image</li>
+</ul>
+</li>
+<li>delay between transitions(used in autoplay)</li>
+<li>Event listeners
+<ul>
+<li>onPageSelect</li>
+<li>onLoad</li>
+<li>onNextClick/onPrevClick</li>
+</ul>
+</li>
+<li>Theming</li>
+<li>Loop</li>
+</ul>
+<h2 id="internal-api"><a class="header" href="#internal-api">Internal API</a></h2>
+<ul>
+<li>prevImage - prev btn/ keyboard/</li>
+<li>nextImage - next btn/ keyboard/ timer</li>
+<li>showImage - dot</li>
+</ul>
+<h1 id="optimization-4"><a class="header" href="#optimization-4">Optimization</a></h1>
+<pre><code>.carousel-images {
+  display: flex;
+  height: 400px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  height: 400px;
+  width: 600px;
+}
+</code></pre>
+<p>滚动</p>
+<pre><code>document.querySelector('.carousel-images').scrollTo({
+  left: selectedIndex * 600,
+  behavior: 'smooth',
+});
+</code></pre>
+<h2 id="image-display"><a class="header" href="#image-display">image display</a></h2>
+<ul>
+<li>object-fit(preferred)</li>
+<li>contain
+<ul>
+<li>scales the image as large as possible. if container &gt; image, it will be tilled --&gt;backgroud-repeat</li>
+</ul>
+</li>
+<li>cover
+<ul>
+<li>scales the image as small as possible. if image &gt; container, it will be cropped vertically or horizontally.</li>
+</ul>
+</li>
+</ul>
+<h2 id="vertically-center-btn"><a class="header" href="#vertically-center-btn">vertically center btn</a></h2>
+<pre><code>.carousel-image-container {
+  height: 400px;
+  width: 600px;
+  position: relative; /* So that position: absolute will be relative to this element. */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); /* Shifts the button up by half its height. */
+}
+
+.carousel-button-prev {
+  left: 30px;
+}
+
+.carousel-button-next {
+  right: 30px;
+}
+</code></pre>
+<h2 id="user-experience-3"><a class="header" href="#user-experience-3">User experience</a></h2>
+<ul>
+<li>CSS scroll snapping</li>
+<li>btn be big enough</li>
+<li>Reposition Prev/Next buttons
+<ul>
+<li>closer for more convenient</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance-4"><a class="header" href="#performance-4">Performance</a></h2>
+<ul>
+<li>Defer loading of images that aren't on-screen
+<img loading="lazy"></li>
+<li>Preloading of images</li>
+<li>Device-specific images</li>
+<li>Virtualized lists</li>
+</ul>
+<h2 id="accessibility-2"><a class="header" href="#accessibility-2">Accessibility</a></h2>
+<ul>
+<li>Mobile-friendliness
+<ul>
+<li>alt, aria-label</li>
+<li>bigger btn</li>
+<li>keyboard support</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="requirements-5"><a class="header" href="#requirements-5">Requirements</a></h1>
+<h2 id="core-6"><a class="header" href="#core-6">Core</a></h2>
+<h1 id="architecture-5"><a class="header" href="#architecture-5">Architecture</a></h1>
+<h1 id="data-model-5"><a class="header" href="#data-model-5">Data model</a></h1>
+<h1 id="api-5"><a class="header" href="#api-5">API</a></h1>
+<h1 id="optimization-5"><a class="header" href="#optimization-5">Optimization</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><ul>
+<li><a href="https://learn-haskell.blog/">blog generator</a></li>
+<li><a href="https://www.cis.upenn.edu/%7Ecis1940/spring13/lectures.html">cis1940</a></li>
+<li><a href="https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/">category</a></li>
+<li><a href="https://haskell-via-sokoban.nomeata.de/#programming-environment">sokoban</a></li>
+<li><a href="http://cl-informatik.uibk.ac.at/teaching/ws10/fp/content.php">functional pl</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="21-monomorphisms"><a class="header" href="#21-monomorphisms">2.1 Monomorphisms</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="theme/pagetoc.js"></script>
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>

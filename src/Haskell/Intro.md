@@ -1,0 +1,5 @@
+- [blog generator](https://learn-haskell.blog/)
+- [cis1940](https://www.cis.upenn.edu/~cis1940/spring13/lectures.html)
+- [category](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
+- [sokoban](https://haskell-via-sokoban.nomeata.de/#programming-environment)
+- [functional pl](http://cl-informatik.uibk.ac.at/teaching/ws10/fp/content.php)

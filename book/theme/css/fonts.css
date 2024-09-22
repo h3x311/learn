@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'NerdFont';
+    src: url('../fonts/IosevkaNerdFont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NerdFont';
+    src: url('../fonts/IosevkaNerdFont-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NerdFont';
+    src: url('../fonts/IosevkaNerdFont-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ChineseFont';
+    src: url('../fonts/SourceHanSansSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChineseFont';
+    src: url('../fonts/SourceHanSansSC-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'NerdFont', 'ChineseFont', sans-serif;
+}
+
+code, pre {
+    font-family: 'NerdFont', monospace;
+}

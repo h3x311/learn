@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>aws - Note By Dot</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+        <link rel="stylesheet" href="../theme/css/fonts.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">JavaScript</li><li class="chapter-item expanded "><a href="../JS/Intro.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../JS/Basic.html"><strong aria-hidden="true">2.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../JS/Type.html"><strong aria-hidden="true">3.</strong> Type</a></li><li class="chapter-item expanded "><a href="../JS/Array.html"><strong aria-hidden="true">4.</strong> Array</a></li><li class="chapter-item expanded "><a href="../JS/Function.html"><strong aria-hidden="true">5.</strong> Function</a></li><li class="chapter-item expanded "><a href="../JS/Object.html"><strong aria-hidden="true">6.</strong> Object</a></li><li class="chapter-item expanded "><a href="../JS/async.html"><strong aria-hidden="true">7.</strong> Async</a></li><li class="chapter-item expanded "><a href="../JS/MapSet.html"><strong aria-hidden="true">8.</strong> MapSet</a></li><li class="chapter-item expanded "><a href="../JS/dom.html"><strong aria-hidden="true">9.</strong> DOM</a></li><li class="chapter-item expanded "><a href="../JS/Debounce.html"><strong aria-hidden="true">10.</strong> Debounce</a></li><li class="chapter-item expanded affix "><li class="part-title">React</li><li class="chapter-item expanded "><a href="../React/Intro.html"><strong aria-hidden="true">11.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../React/Basic.html"><strong aria-hidden="true">12.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../React/Design.html"><strong aria-hidden="true">13.</strong> Design</a></li><li class="chapter-item expanded "><a href="../React/Hooks.html"><strong aria-hidden="true">14.</strong> Hooks</a></li><li class="chapter-item expanded "><a href="../React/API.html"><strong aria-hidden="true">15.</strong> API</a></li><li class="chapter-item expanded "><a href="../React/Redux.html"><strong aria-hidden="true">16.</strong> Redux</a></li><li class="chapter-item expanded "><a href="../React/UI.html"><strong aria-hidden="true">17.</strong> UI</a></li><li class="chapter-item expanded "><a href="../React/CSS.html"><strong aria-hidden="true">18.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../React/Other.html"><strong aria-hidden="true">19.</strong> Other</a></li><li class="chapter-item expanded affix "><li class="part-title">NextJs</li><li class="chapter-item expanded "><a href="../Nextjs/basic.html"><strong aria-hidden="true">20.</strong> Basic</a></li><li class="chapter-item expanded affix "><li class="part-title">LeetCode</li><li class="chapter-item expanded "><a href="../Leetcode/Array.html"><strong aria-hidden="true">21.</strong> Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/TwoPointer.html"><strong aria-hidden="true">22.</strong> Two Pointer</a></li><li class="chapter-item expanded "><a href="../Leetcode/SlideWindow.html"><strong aria-hidden="true">23.</strong> Slide Window</a></li><li class="chapter-item expanded "><a href="../Leetcode/Matrix.html"><strong aria-hidden="true">24.</strong> Matrix</a></li><li class="chapter-item expanded "><a href="../Leetcode/Hashmap.html"><strong aria-hidden="true">25.</strong> Hashmap</a></li><li class="chapter-item expanded "><a href="../Leetcode/Interval.html"><strong aria-hidden="true">26.</strong> Interval</a></li><li class="chapter-item expanded "><a href="../Leetcode/Stack.html"><strong aria-hidden="true">27.</strong> Stack</a></li><li class="chapter-item expanded "><a href="../Leetcode/LinkedList.html"><strong aria-hidden="true">28.</strong> LinkedList</a></li><li class="chapter-item expanded "><a href="../Leetcode/Tree.html"><strong aria-hidden="true">29.</strong> Tree</a></li><li class="chapter-item expanded affix "><li class="part-title">Python</li><li class="chapter-item expanded "><a href="../Python/Array.html"><strong aria-hidden="true">30.</strong> Array</a></li><li class="chapter-item expanded "><a href="../Python/string.html"><strong aria-hidden="true">31.</strong> string</a></li><li class="chapter-item expanded "><a href="../Python/directory.html"><strong aria-hidden="true">32.</strong> directory</a></li><li class="chapter-item expanded "><a href="../Python/iterate.html"><strong aria-hidden="true">33.</strong> iterate</a></li><li class="chapter-item expanded affix "><li class="part-title">Interview</li><li class="chapter-item expanded "><a href="../Interview/assignment.html"><strong aria-hidden="true">34.</strong> Assignment</a></li><li class="chapter-item expanded "><a href="../Interview/problem.html"><strong aria-hidden="true">35.</strong> Problem</a></li><li class="chapter-item expanded "><a href="../Interview/BQ.html"><strong aria-hidden="true">36.</strong> Behavior</a></li><li class="chapter-item expanded "><a href="../Interview/job/jobRecord.html"><strong aria-hidden="true">37.</strong> Job Record</a></li><li class="chapter-item expanded "><a href="../Interview/job/applyRecord.html"><strong aria-hidden="true">38.</strong> Apply Record</a></li><li class="chapter-item expanded "><a href="../Interview/job/resumeRecord.html"><strong aria-hidden="true">39.</strong> Resume Record</a></li><li class="chapter-item expanded "><a href="../Interview/mock/bq_mock.html"><strong aria-hidden="true">40.</strong> BQ_mock</a></li><li class="chapter-item expanded affix "><li class="part-title">TypeScript</li><li class="chapter-item expanded affix "><li class="part-title">System Design</li><li class="chapter-item expanded "><a href="../SystemDesign/Basic.html"><strong aria-hidden="true">41.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../SystemDesign/optimization.html"><strong aria-hidden="true">42.</strong> optimization</a></li><li class="chapter-item expanded "><a href="../SystemDesign/conclusion.html"><strong aria-hidden="true">43.</strong> conclusion</a></li><li class="chapter-item expanded "><a href="../SystemDesign/feeds.html"><strong aria-hidden="true">44.</strong> feeds</a></li><li class="chapter-item expanded "><a href="../SystemDesign/instagram.html"><strong aria-hidden="true">45.</strong> instagram</a></li><li class="chapter-item expanded "><a href="../SystemDesign/aws.html" class="active"><strong aria-hidden="true">46.</strong> aws</a></li><li class="chapter-item expanded "><a href="../SystemDesign/chat.html"><strong aria-hidden="true">47.</strong> chat</a></li><li class="chapter-item expanded "><a href="../SystemDesign/imageCarousel.html"><strong aria-hidden="true">48.</strong> imageCarousel</a></li><li class="chapter-item expanded "><a href="../SystemDesign/dropdown.html"><strong aria-hidden="true">49.</strong> dropdown</a></li><li class="chapter-item expanded affix "><li class="part-title">Haskell</li><li class="chapter-item expanded "><a href="../Haskell/Intro.html"><strong aria-hidden="true">50.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../Haskell/Sokoban.html"><strong aria-hidden="true">51.</strong> Sokoban</a></li><li class="chapter-item expanded affix "><li class="part-title">Category Theory</li><li class="chapter-item expanded "><a href="../category/2.1Monomorphisms.html"><strong aria-hidden="true">52.</strong> 2.1 Monomorphisms</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+           
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Note By Dot</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="requirements"><a class="header" href="#requirements">Requirements</a></h1>
+<h2 id="core"><a class="header" href="#core">Core</a></h2>
+<ul>
+<li>browsing products</li>
+<li>add to cart </li>
+<li>check out successfully</li>
+</ul>
+<h2 id="pages"><a class="header" href="#pages">Pages</a></h2>
+<ul>
+<li>product list page
+<ul>
+<li>name, image, price</li>
+</ul>
+</li>
+<li>product detail page
+<ul>
+<li>name, image(multiple), desc, price</li>
+</ul>
+</li>
+<li>cart page</li>
+<li>checkout page</li>
+</ul>
+<h2 id="international"><a class="header" href="#international">international</a></h2>
+<ul>
+<li>diff area diff age</li>
+</ul>
+<h2 id="non-functional"><a class="header" href="#non-functional">non-functional</a></h2>
+<ul>
+<li>load under 2 seconds</li>
+<li>respond quickly</li>
+</ul>
+<h2 id="devices"><a class="header" href="#devices">devices</a></h2>
+<p>laptop, tablet, mobile</p>
+<h2 id="security"><a class="header" href="#security">security</a></h2>
+<p>sign in to purchase</p>
+<h1 id="architecture"><a class="header" href="#architecture">Architecture</a></h1>
+<p>Pages:</p>
+<pre><code>Product List: Displays a list of product items that can be added to the cart.
+Product Details: Displays details of a single product along with additional details.
+Cart: Displays added cart items and allows changing of quantity and deleting added items.
+Checkout: Displays address and payment forms the user has to complete in order to place the order.
+</code></pre>
+<h2 id="render"><a class="header" href="#render">render</a></h2>
+<p>SEO - ssr - mpa/spa(yes)</p>
+<h1 id="data-model"><a class="header" href="#data-model">Data model</a></h1>
+<ul>
+<li>ProductList server products, pagination </li>
+<li>prodcut server name, desc, unit_price, currency, primary_img, image_url</li>
+<li>cart items, client store, total price, currency</li>
+<li>address, user input, checkout, name, coutry, stree, city</li>
+<li>payment, card_num, card_expiry, cvv</li>
+</ul>
+<h1 id="api"><a class="header" href="#api">API</a></h1>
+<ul>
+<li>get /prodcuts (size, page, country)
+<ul>
+<li>specific pages</li>
+<li>not update frequently
+<ul>
+<li>not stale</li>
+</ul>
+</li>
+<li>total results</li>
+</ul>
+</li>
+<li>get /products/{id}</li>
+<li>post /cart/products</li>
+<li>put /cart/products/{id}</li>
+<li>delete /cart/products/{id}</li>
+<li></li>
+</ul>
+<h1 id="optimization"><a class="header" href="#optimization">Optimization</a></h1>
+<h2 id="performance"><a class="header" href="#performance">performance</a></h2>
+<ul>
+<li>prefetch</li>
+<li>lazy loading, prioritize</li>
+<li>code spliting</li>
+</ul>
+<h2 id="seo"><a class="header" href="#seo">seo</a></h2>
+<ul>
+<li>title meta</li>
+<li>sitemap - crawler</li>
+</ul>
+<h2 id="image"><a class="header" href="#image">image</a></h2>
+<ul>
+<li>webp</li>
+<li>cdn</li>
+<li>priority</li>
+<li>lazy load below the fold images</li>
+<li>load critical images early.</li>
+</ul>
+<h2 id="pay"><a class="header" href="#pay">pay</a></h2>
+<ul>
+<li>addresss diff from diff area
+<ul>
+<li>use stripe</li>
+</ul>
+</li>
+<li>auto complete payment form</li>
+</ul>
+<h2 id="accessibilty"><a class="header" href="#accessibilty">accessibilty</a></h2>
+<ul>
+<li>use more semantic elements  other than div</li>
+<li>img with alt</li>
+<li>input with label
+<ul>
+<li>aria-describedby</li>
+<li>aria-live=&quot;assertive</li>
+</ul>
+</li>
+<li>input with type
+<ul>
+<li>pattern, minlength, maxlength</li>
+</ul>
+</li>
+</ul>
+<h2 id="security-1"><a class="header" href="#security-1">security</a></h2>
+<ul>
+<li>https
+<ul>
+<li>especially for payment</li>
+</ul>
+</li>
+</ul>
+<h2 id="user-experience"><a class="header" href="#user-experience">user experience</a></h2>
+<ul>
+<li>store content to cookie</li>
+<li>Make promo code fields less prominent so that people without promo codes</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../SystemDesign/instagram.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../SystemDesign/chat.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../SystemDesign/instagram.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../SystemDesign/chat.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../theme/pagetoc.js"></script>
+
+
+    </body>
+</html>

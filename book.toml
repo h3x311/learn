@@ -1,0 +1,13 @@
+[book]
+authors = ["zerone0x"]
+language = "en"
+multilingual = true
+src = "src"
+title = "Note By Dot"
+
+[preprocessor.pagetoc]
+[output.html]
+additional-css = ["theme/pagetoc.css", "theme/css/fonts.css"]
+additional-js  = ["theme/pagetoc.js"]
+site_url = "/note/"
+
