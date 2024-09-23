@@ -39,30 +39,30 @@ React to state changes by re-render UI😂
 ### 2 conditions to re-render
 - initial render
 - state update - component re-render - view re-render
-- Virtual DOM - cheap and fast to create multiple trees
-> write to dom is expensive and slow, usually only small part need to update
+> **Virtual DOM **- cheap and fast to create multiple trees. Caused write to dom is expensive and slow, usually only small part need to update
 
 
 ### Render phase
 Has impact on all of its children
-- Reconciler - decide which DOM elements need to update
+- **Reconciler** - decide which DOM elements need to update
   - fiber tree(fiber for each component and DOM element)
     - contain: state, props, side effects, hooks, queue of work...
 - Updated React Elements --> new Virtual DOM + current Fiber Tree --> reconciliation + diff
 - render(diff) > patch(diff) > re-render
-- render will not been triggered instantly, but will be scheduled when JS engine is idle --> **Asynchronous**(Can be splited into diff chunks)
+- **Asynchronous**(Can be splited into diff chunks)
+  - render will not been triggered instantly, but will be scheduled when JS engine is idle 
 
 
 ### Commit phase
-- list of DOM updates --> Renderers: ReactDOM: write to dom --> update UI
-- commit is synchronous
+- **list** of DOM updates --> **Renderers**(ex: ReactDOM): write to dom --> update UI
+- commit is **synchronous**
 - after finish commit, WIP fiber tree become current fiber tree
 
 #### diff
 - same position, different element
-  - destroy old tree including its children
+  - **destroy** old tree including its children
 - same position, same element
-  - 更新属性,不重新渲染DOM(element and state)
+  - **更新属性**,不重新渲染DOM(element and state)
 
 ### browser paint
 

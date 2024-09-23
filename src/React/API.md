@@ -6,11 +6,11 @@
 - request
   - method
   - heads
-    - ```
+    ```
     'Content-Type': 'application/json',
     ```
   - body
-    - ```
+    ```
     JSON.stringify({
     name: 'John',
     age: 30,

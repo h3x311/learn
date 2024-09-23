@@ -199,15 +199,14 @@
 <ul>
 <li>initial render</li>
 <li>state update - component re-render - view re-render</li>
-<li>Virtual DOM - cheap and fast to create multiple trees</li>
 </ul>
 <blockquote>
-<p>write to dom is expensive and slow, usually only small part need to update</p>
+<p>**Virtual DOM **- cheap and fast to create multiple trees. Caused write to dom is expensive and slow, usually only small part need to update</p>
 </blockquote>
 <h3 id="render-phase"><a class="header" href="#render-phase">Render phase</a></h3>
 <p>Has impact on all of its children</p>
 <ul>
-<li>Reconciler - decide which DOM elements need to update
+<li><strong>Reconciler</strong> - decide which DOM elements need to update
 <ul>
 <li>fiber tree(fiber for each component and DOM element)
 <ul>
@@ -218,24 +217,28 @@
 </li>
 <li>Updated React Elements --&gt; new Virtual DOM + current Fiber Tree --&gt; reconciliation + diff</li>
 <li>render(diff) &gt; patch(diff) &gt; re-render</li>
-<li>render will not been triggered instantly, but will be scheduled when JS engine is idle --&gt; <strong>Asynchronous</strong>(Can be splited into diff chunks)</li>
+<li><strong>Asynchronous</strong>(Can be splited into diff chunks)
+<ul>
+<li>render will not been triggered instantly, but will be scheduled when JS engine is idle </li>
+</ul>
+</li>
 </ul>
 <h3 id="commit-phase"><a class="header" href="#commit-phase">Commit phase</a></h3>
 <ul>
-<li>list of DOM updates --&gt; Renderers: ReactDOM: write to dom --&gt; update UI</li>
-<li>commit is synchronous</li>
+<li><strong>list</strong> of DOM updates --&gt; <strong>Renderers</strong>(ex: ReactDOM): write to dom --&gt; update UI</li>
+<li>commit is <strong>synchronous</strong></li>
 <li>after finish commit, WIP fiber tree become current fiber tree</li>
 </ul>
 <h4 id="diff"><a class="header" href="#diff">diff</a></h4>
 <ul>
 <li>same position, different element
 <ul>
-<li>destroy old tree including its children</li>
+<li><strong>destroy</strong> old tree including its children</li>
 </ul>
 </li>
 <li>same position, same element
 <ul>
-<li>更新属性,不重新渲染DOM(element and state)</li>
+<li><strong>更新属性</strong>,不重新渲染DOM(element and state)</li>
 </ul>
 </li>
 </ul>
