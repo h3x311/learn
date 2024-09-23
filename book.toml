@@ -3,7 +3,7 @@ authors = ["zerone0x"]
 language = "en"
 multilingual = true
 src = "src"
-title = "Dot is learning📖"
+title = "Dot is learning"
 
 [preprocessor.pagetoc]
 [output.html]
