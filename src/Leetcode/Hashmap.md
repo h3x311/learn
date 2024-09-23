@@ -16,6 +16,17 @@ value = hashmap.get(key, default_value)
 del hashmap[key]
 ```
 
+## Iteration
+
+```python
+for key, value in hashmap.items():
+    print(key, value)
+for key in hashmap:
+    print(key)
+for value in hashmap.values():
+    print(value)
+```
+
 ## data type
 重点是如何存值，可能涉及到从str --> list --> str的转换(list(str))，比如把一个str重新排序，比如group anagram
 还需要考虑对input的预处理，如果重复char没有意义，先用Set来去重，再开始iterate

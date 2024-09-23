@@ -33,8 +33,8 @@
 | 该状态是否被一个或几个兄弟组件使用？                  | 是 → 将状态提升到第一个共同的父组件                 |
 |                                                      |                                                      |
 
-## React render
-> React to state changes by re-render UI😂
+## Render Process
+React to state changes by re-render UI😂
 
 ### 2 conditions to re-render
 - initial render
@@ -45,26 +45,26 @@
 
 ### Render phase
 Has impact on all of its children
-> Reconciler - decide which DOM elements need to update
-  > fiber tree(fiber for each component and DOM element)
-    > contain: state, props, side effects, hooks, queue of work...
-> Updated React Elements --> new Virtual DOM + current Fiber Tree --> reconciliation + diff
-> render(diff) > patch(diff) > re-render
-> render will not been triggered instantly, but will be scheduled when JS engine is idle --> **Asynchronous**(Can be splited into diff chunks)
+- Reconciler - decide which DOM elements need to update
+  - fiber tree(fiber for each component and DOM element)
+    - contain: state, props, side effects, hooks, queue of work...
+- Updated React Elements --> new Virtual DOM + current Fiber Tree --> reconciliation + diff
+- render(diff) > patch(diff) > re-render
+- render will not been triggered instantly, but will be scheduled when JS engine is idle --> **Asynchronous**(Can be splited into diff chunks)
 
 
-#### Commit phase
-> list of DOM updates --> Renderers: ReactDOM: write to dom --> update UI
-> commit is synchronous
-> after finish commit, WIP fiber tree become current fiber tree
+### Commit phase
+- list of DOM updates --> Renderers: ReactDOM: write to dom --> update UI
+- commit is synchronous
+- after finish commit, WIP fiber tree become current fiber tree
 
-##### diff
+#### diff
 - same position, different element
   - destroy old tree including its children
 - same position, same element
   - 更新属性,不重新渲染DOM(element and state)
 
-#### browser paint
+### browser paint
 
 
 

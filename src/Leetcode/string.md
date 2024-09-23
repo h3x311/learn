@@ -97,11 +97,7 @@ strs = "".join(strs)
 ```
 
 ## lower and upper
-- lower
 ```python
 "HELLO WORLD".lower()
-```
-- upper
-```python
 "hello world".upper()
 ```

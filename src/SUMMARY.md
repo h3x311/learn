@@ -2,18 +2,23 @@
 
 [Introduction](../README.md)
 
-# JavaScript
+# LeetCode
 
-- [Intro](./JS/Intro.md)
-- [Basic](./JS/Basic.md)
-- [Type](./JS/Type.md)
-- [Array](./JS/Array.md)
-- [Function](./JS/Function.md)
-- [Object](./JS/Object.md)
-- [Async](./JS/async.md)
-- [MapSet](./JS/MapSet.md)
-- [DOM](./JS/dom.md)
-- [Debounce](./JS/Debounce.md)
+- [Basic](./Leetcode/Basic.md)
+- [String](./Leetcode/string.md)
+- [Array](./Leetcode/Array.md)
+- [Two Pointer](./Leetcode/TwoPointer.md)
+- [Slide Window](./Leetcode/SlideWindow.md)
+- [Matrix](./Leetcode/Matrix.md)
+- [Hashmap](./Leetcode/Hashmap.md)
+- [Interval](./Leetcode/Interval.md)
+- [Stack](./Leetcode/Stack.md)
+- [LinkedList](./Leetcode/LinkedList.md)
+- [Tree](./Leetcode/Tree.md)
+- [Graph](./Leetcode/Graph.md)
+
+
+
 
 
 # React
@@ -28,30 +33,26 @@
 - [CSS](./React/CSS.md)
 - [Other](./React/Other.md)
 
+# JavaScript
+
+- [Intro](./JS/Intro.md)
+- [Basic](./JS/Basic.md)
+- [Type](./JS/Type.md)
+- [Array](./JS/Array.md)
+- [Function](./JS/Function.md)
+- [Object](./JS/Object.md)
+- [Async](./JS/async.md)
+- [MapSet](./JS/MapSet.md)
+- [DOM](./JS/dom.md)
+- [Debounce](./JS/Debounce.md)
 # NextJs
 
 - [Basic](./Nextjs/basic.md)
 
 
 
-# LeetCode
 
-- [Array](./Leetcode/Array.md)
-- [Two Pointer](./Leetcode/TwoPointer.md)
-- [Slide Window](./Leetcode/SlideWindow.md)
-- [Matrix](./Leetcode/Matrix.md)
-- [Hashmap](./Leetcode/Hashmap.md)
-- [Interval](./Leetcode/Interval.md)
-- [Stack](./Leetcode/Stack.md)
-- [LinkedList](./Leetcode/LinkedList.md)
-- [Tree](./Leetcode/Tree.md)
 
-# Python
-
-- [Array](./Python/Array.md)
-- [string](./Python/string.md)
-- [directory](./Python/directory.md)
-- [iterate](./Python/iterate.md)
 
 # Interview
 
