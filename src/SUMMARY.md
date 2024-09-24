@@ -16,6 +16,7 @@
 - [LinkedList](./Leetcode/LinkedList.md)
 - [Tree](./Leetcode/Tree.md)
 - [Graph](./Leetcode/Graph.md)
+- [Binary Search](./Leetcode/BinarySearch.md)
 
 
 

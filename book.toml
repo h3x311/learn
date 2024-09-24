@@ -10,4 +10,4 @@ title = "Dot is learning"
 additional-css = ["theme/pagetoc.css", "theme/css/fonts.css"]
 additional-js  = ["theme/pagetoc.js"]
 site_url = "/note/"
-
+port = 3007

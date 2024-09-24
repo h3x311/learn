@@ -1,6 +1,6 @@
 # Array
 
-## Iteration iterated item for **index** and **value**
+## **iterated** item for **index** and **value**
 
 ```python
 for index, value in enumerate(array):
@@ -23,3 +23,9 @@ for a, b in zip(array1, array2):
 
 - appendleft
 - insert(0, x)
+
+## append or generate a array
+
+```python
+rows = [row[0] for row in matrix]
+```
