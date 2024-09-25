@@ -22,3 +22,7 @@ def find_insert_position(arr, target):
    1. 返回L
 2. 找小于等于target的最大值, 比如 `Search a 2D Matrix`在找row时
    1. 返回R
+
+## overflow 
+
+use `l + (r - l) // 2` to avoid overflow
