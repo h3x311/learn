@@ -1,7 +1,30 @@
 # Object
 
+## Prototype
+
+- Get prototype
+  - `__proto__`
+  - `Object.getPrototypeOf(obj)`
+- Set prototype
+  - `Object.setPrototypeOf(obj, proto)`
+
+## Create object
+
+- `{}`
+- `new Object()`
+- `Object.create(proto)`
+- constructor function
+- class
+
 ## Basic method
-- `Object.values`
+- `Object.values(obj)`
+- `Object.keys(obj)`
+- `Object.entries(obj)`
+- `Object.fromEntries(iterable)`
+- `Object.hasOwn(obj, key)`
+  - filter inherienced properties
+- Object.getOwnPropertyNames(obj)
+  - return an array of all properties (including non-enumerable properties) found directly upon a given object.
 
 
 ## 判断key是否是原生的

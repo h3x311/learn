@@ -39,20 +39,22 @@
 - [Intro](./JS/Intro.md)
 - [Basic](./JS/Basic.md)
 - [Type](./JS/Type.md)
-- [Array](./JS/Array.md)
+- [Scope](./JS/scope.md)
 - [Function](./JS/Function.md)
 - [Object](./JS/Object.md)
 - [Async](./JS/async.md)
 - [MapSet](./JS/MapSet.md)
 - [DOM](./JS/dom.md)
+- [Array](./JS/Array.md)
 - [Debounce](./JS/Debounce.md)
 # NextJs
 
 - [Basic](./Nextjs/basic.md)
 
 
+# DevOps
 
-
+- [CICD](./devops/CICD.md)
 
 
 # Interview
