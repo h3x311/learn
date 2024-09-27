@@ -17,6 +17,8 @@
 - [Tree](./Leetcode/Tree.md)
 - [Graph](./Leetcode/Graph.md)
 - [Binary Search](./Leetcode/BinarySearch.md)
+- [Heap](./Leetcode/Heap.md)
+- [DP](./Leetcode/DP.md)
 
 
 
@@ -62,9 +64,10 @@
 - [Assignment](./Interview/assignment.md)
 - [Problem](./Interview/problem.md)
 - [Behavior](./Interview/BQ.md)
-- [Job Record](./Interview/job/jobRecord.md)
 - [Apply Record](./Interview/job/applyRecord.md)
 - [Resume Record](./Interview/job/resumeRecord.md)
+- [Prepare Record](./Interview/job/prepareRecord.md)
+- [Behavior Mock](./Interview/mock/bq_mock.md)
 ## mock
 
 - [BQ_mock](./Interview/mock/bq_mock.md)

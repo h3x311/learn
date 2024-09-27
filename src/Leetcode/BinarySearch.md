@@ -38,6 +38,8 @@ rotate array的二分搜索比较困难,因为判断的条件比较难思考.
 - 如果是最小值的话 返回l
 - 注意边界条件(不要越界 `0<x<len(nums)-1`)
 
+## Edge Condition
+非典型的二分搜索在指针移动时候的条件一般需要判断边界值, 是否越界.
 
 
 ## time complexity/space complexity
