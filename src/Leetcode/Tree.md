@@ -51,3 +51,6 @@ class Solution:
         dfs(root)
         return True if self.isbst == None else False
 ```
+
+### time complexity/space complexity
+`O(N), O(logN)-O(N)`

@@ -13,3 +13,18 @@
 
 Reference:
 - [Performant Front-End Architecture](https://www.debugbear.com/blog/performant-front-end-architecture)
+
+## requirement
+
+- user/customers
+  - who will use it
+  - how the system will be used
+    - frequency
+- scale(r/w)
+  - How many read queries per second
+  - How much data is queried per request
+  - How many video views are pocessed per second
+  - Can there be spikes in traffic
+- performance
+  - 
+- cost

@@ -173,6 +173,24 @@
 </ol>
 <h2 id="overflow"><a class="header" href="#overflow">overflow</a></h2>
 <p>use <code>l + (r - l) // 2</code> to avoid overflow</p>
+<h2 id="rotation-of-array"><a class="header" href="#rotation-of-array">rotation of array</a></h2>
+<p>rotate array的二分搜索比较困难,因为判断的条件比较难思考.</p>
+<ul>
+<li>首先判断m在哪段
+<ul>
+<li>根据nums[m] 和nums[r]的比较</li>
+</ul>
+</li>
+<li>如果是target的话,再判断是在m的左边还是右边
+<ul>
+<li>根据是否满足固定区间来划分</li>
+</ul>
+</li>
+<li>如果是最小值的话 返回l</li>
+<li>注意边界条件(不要越界 <code>0&lt;x&lt;len(nums)-1</code>)</li>
+</ul>
+<h2 id="time-complexityspace-complexity"><a class="header" href="#time-complexityspace-complexity">time complexity/space complexity</a></h2>
+<p><code>O(log n), O(1)</code></p>
 
                     </main>
 

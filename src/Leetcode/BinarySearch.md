@@ -26,3 +26,20 @@ def find_insert_position(arr, target):
 ## overflow 
 
 use `l + (r - l) // 2` to avoid overflow
+
+## rotation of array
+
+rotate array的二分搜索比较困难,因为判断的条件比较难思考.
+
+- 首先判断m在哪段
+  - 根据nums[m] 和nums[r]的比较
+- 如果是target的话,再判断是在m的左边还是右边
+  - 根据是否满足固定区间来划分
+- 如果是最小值的话 返回l
+- 注意边界条件(不要越界 `0<x<len(nums)-1`)
+
+
+
+## time complexity/space complexity
+
+`O(log n), O(1)`

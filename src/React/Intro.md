@@ -4,6 +4,7 @@
 
 Plan: Basic(1 week) - core(2 week) - advanced(1 week)
 - [react.dev](https://react.dev/reference/react/hooks)
+- [top-reactjs-interview-questions](https://github.com/yangshun/top-reactjs-interview-questions)
 
 ## core
 - JSX

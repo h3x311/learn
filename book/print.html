@@ -501,6 +501,8 @@ self.right.prev = self.left
         dfs(root)
         return True if self.isbst == None else False
 </code></pre>
+<h3 id="time-complexityspace-complexity"><a class="header" href="#time-complexityspace-complexity">time complexity/space complexity</a></h3>
+<p><code>O(N), O(logN)-O(N)</code></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="graph"><a class="header" href="#graph">Graph</a></h1>
 <h2 id="topological-sort"><a class="header" href="#topological-sort">Topological Sort</a></h2>
 <blockquote>
@@ -571,11 +573,30 @@ self.right.prev = self.left
 </ol>
 <h2 id="overflow"><a class="header" href="#overflow">overflow</a></h2>
 <p>use <code>l + (r - l) // 2</code> to avoid overflow</p>
+<h2 id="rotation-of-array"><a class="header" href="#rotation-of-array">rotation of array</a></h2>
+<p>rotate array的二分搜索比较困难,因为判断的条件比较难思考.</p>
+<ul>
+<li>首先判断m在哪段
+<ul>
+<li>根据nums[m] 和nums[r]的比较</li>
+</ul>
+</li>
+<li>如果是target的话,再判断是在m的左边还是右边
+<ul>
+<li>根据是否满足固定区间来划分</li>
+</ul>
+</li>
+<li>如果是最小值的话 返回l</li>
+<li>注意边界条件(不要越界 <code>0&lt;x&lt;len(nums)-1</code>)</li>
+</ul>
+<h2 id="time-complexityspace-complexity-1"><a class="header" href="#time-complexityspace-complexity-1">time complexity/space complexity</a></h2>
+<p><code>O(log n), O(1)</code></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="react"><a class="header" href="#react">React</a></h1>
 <h2 id="preface-2"><a class="header" href="#preface-2">Preface</a></h2>
 <p>Plan: Basic(1 week) - core(2 week) - advanced(1 week)</p>
 <ul>
 <li><a href="https://react.dev/reference/react/hooks">react.dev</a></li>
+<li><a href="https://github.com/yangshun/top-reactjs-interview-questions">top-reactjs-interview-questions</a></li>
 </ul>
 <h2 id="core"><a class="header" href="#core">core</a></h2>
 <ul>
@@ -1935,6 +1956,31 @@ for React, basically every use of useEffect should be examined and attempts shou
 <ul>
 <li><a href="https://www.debugbear.com/blog/performant-front-end-architecture">Performant Front-End Architecture</a></li>
 </ul>
+<h2 id="requirement"><a class="header" href="#requirement">requirement</a></h2>
+<ul>
+<li>user/customers
+<ul>
+<li>who will use it</li>
+<li>how the system will be used
+<ul>
+<li>frequency</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>scale(r/w)
+<ul>
+<li>How many read queries per second</li>
+<li>How much data is queried per request</li>
+<li>How many video views are pocessed per second</li>
+<li>Can there be spikes in traffic</li>
+</ul>
+</li>
+<li>
+<h2 id="performance"><a class="header" href="#performance">performance</a></h2>
+</li>
+<li>cost</li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="code-splitting-javascript-for-faster-performance"><a class="header" href="#code-splitting-javascript-for-faster-performance">Code splitting JavaScript for faster performance</a></h1>
 <ul>
 <li>Split on the page level</li>
@@ -1971,7 +2017,7 @@ Consider differences in the length of text in different languages.
 Do not concatenate translated strings.
 Do not put text in images.
 Be mindful of how colors are perceived in different cultures.</p>
-<h1 id="performance"><a class="header" href="#performance">Performance</a></h1>
+<h1 id="performance-1"><a class="header" href="#performance-1">Performance</a></h1>
 <h2 id="image-1"><a class="header" href="#image-1">Image</a></h2>
 <ul>
 <li>Image carousel</li>
@@ -2061,7 +2107,7 @@ Accessible forms
 无障碍表格
 Normalized store
 正规化门店</p>
-<h2 id="performance-1"><a class="header" href="#performance-1">Performance</a></h2>
+<h2 id="performance-2"><a class="header" href="#performance-2">Performance</a></h2>
 <h3 id="optimized-images"><a class="header" href="#optimized-images">Optimized images</a></h3>
 <ul>
 <li>Image carousel</li>
@@ -2199,7 +2245,7 @@ Checkout: Displays address and payment forms the user has to complete in order t
 <li></li>
 </ul>
 <h1 id="optimization-3"><a class="header" href="#optimization-3">Optimization</a></h1>
-<h2 id="performance-2"><a class="header" href="#performance-2">performance</a></h2>
+<h2 id="performance-3"><a class="header" href="#performance-3">performance</a></h2>
 <ul>
 <li>prefetch</li>
 <li>lazy loading, prioritize</li>
@@ -2462,7 +2508,7 @@ Checkout: Displays address and payment forms the user has to complete in order t
 <li>out of order</li>
 <li>disconnection</li>
 </ul>
-<h2 id="performance-3"><a class="header" href="#performance-3">Performance</a></h2>
+<h2 id="performance-4"><a class="header" href="#performance-4">Performance</a></h2>
 <ul>
 <li>Lazy load components dont need for initial load(popmodels and emoji picker)</li>
 <li>windowing/virtualization for long list of messages </li>
@@ -2641,7 +2687,7 @@ Checkout: Displays address and payment forms the user has to complete in order t
 </ul>
 </li>
 </ul>
-<h2 id="performance-4"><a class="header" href="#performance-4">Performance</a></h2>
+<h2 id="performance-5"><a class="header" href="#performance-5">Performance</a></h2>
 <ul>
 <li>Defer loading of images that aren't on-screen
 <img loading="lazy"></li>
