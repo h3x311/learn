@@ -23,7 +23,7 @@
 
 
 # React
-
+- [React_Code_QA](./React/React_Code_QA.md)
 - [Intro](./React/Intro.md)
 - [Basic](./React/Basic.md)
 - [Design](./React/Design.md)
@@ -35,7 +35,7 @@
 - [Other](./React/Other.md)
 
 # JavaScript
-
+- [JS_Code_QA](./JS/JS_Code_QA.md)
 - [Intro](./JS/Intro.md)
 - [Basic](./JS/Basic.md)
 - [Type](./JS/Type.md)
@@ -46,7 +46,7 @@
 - [MapSet](./JS/MapSet.md)
 - [DOM](./JS/dom.md)
 - [Array](./JS/Array.md)
-- [JS_Code_QA](./JS/JS_Code_QA.md)
+
 
 
 # System Design
