@@ -48,7 +48,7 @@
 - [MapSet](./JS/MapSet.md)
 - [DOM](./JS/dom.md)
 - [Array](./JS/Array.md)
-- [Debounce](./JS/Debounce.md)
+- [JS_Code_QA](./JS/JS_Code_QA.md)
 # NextJs
 
 - [Basic](./Nextjs/basic.md)
@@ -76,7 +76,7 @@
 # TypeScript
 
 # System Design
-
+- [notes](./SystemDesign/notes.md)
 - [Basic](./SystemDesign/Basic.md)
 - [optimization](./SystemDesign/optimization.md)
 - [conclusion](./SystemDesign/conclusion.md)
