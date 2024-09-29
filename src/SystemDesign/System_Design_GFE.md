@@ -152,8 +152,8 @@ network only”、“network and cache”、“cache only
 - role
 - aria-label
 - aria-labelledby
-- <input>s are linked to their error messages via aria-describedby and error messages are announced with aria-live="assertive"
-- Use <input>s of the correct types and appropriate validation-related attributes like pattern, minlength, maxlength.
+- `<input>s` are linked to their error messages via aria-describedby and error messages are announced with aria-live="assertive"
+- Use `<input>s` of the correct types and appropriate validation-related attributes like pattern, minlength, maxlength.
 
 ## Security
 - Use HTTPS so that all communication with the server is encrypted and that other users on the same Wi-FI network cannot intercept and obtain any sensitive details.
