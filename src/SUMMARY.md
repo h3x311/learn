@@ -22,8 +22,6 @@
 
 
 
-
-
 # React
 
 - [Intro](./React/Intro.md)
@@ -49,34 +47,11 @@
 - [DOM](./JS/dom.md)
 - [Array](./JS/Array.md)
 - [JS_Code_QA](./JS/JS_Code_QA.md)
-# NextJs
-
-- [Basic](./Nextjs/basic.md)
 
 
-# DevOps
-
-- [CICD](./devops/CICD.md)
-
-
-# Interview
-
-- [Assignment](./Interview/assignment.md)
-- [Problem](./Interview/problem.md)
-- [Behavior](./Interview/BQ.md)
-- [Apply Record](./Interview/job/applyRecord.md)
-- [Resume Record](./Interview/job/resumeRecord.md)
-- [Prepare Record](./Interview/job/prepareRecord.md)
-- [Behavior Mock](./Interview/mock/bq_mock.md)
-## mock
-
-- [BQ_mock](./Interview/mock/bq_mock.md)
-
-
-# TypeScript
 
 # System Design
-- [notes](./SystemDesign/notes.md)
+- [System_Design_GFE](./SystemDesign/System_Design_GFE.md)
 - [Basic](./SystemDesign/Basic.md)
 - [optimization](./SystemDesign/optimization.md)
 - [conclusion](./SystemDesign/conclusion.md)
@@ -86,6 +61,28 @@
 - [chat](./SystemDesign/chat.md)
 - [imageCarousel](./SystemDesign/imageCarousel.md)
 - [dropdown](./SystemDesign/dropdown.md)
+# Interview
+
+- [Assignment](./Interview/assignment.md)
+- [Problem](./Interview/problem.md)
+- [Behavior](./Interview/BQ.md)
+- [Apply Record](./Interview/job/applyRecord.md)
+- [Resume Record](./Interview/job/resumeRecord.md)
+- [Prepare Record](./Interview/job/prepareRecord.md)
+- [Behavior Mock](./Interview/mock/bq_mock.md)
+
+# DevOps
+
+- [CICD](./devops/CICD.md)
+
+# NextJs
+
+- [Basic](./Nextjs/basic.md)
+
+
+
+# TypeScript
+
 
 # Haskell
 

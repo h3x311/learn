@@ -26,5 +26,8 @@ Reference:
   - How many video views are pocessed per second
   - Can there be spikes in traffic
 - performance
-  - 
+  - What is expected write-to-read data delay?
+  - What is expected p99 latency fo read queries?
 - cost
+  - Should the design minimize the cost of development?
+  - Should the design minimize the cost of maintenance?
