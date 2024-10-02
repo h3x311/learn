@@ -1,5 +1,7 @@
+# QA
+## Transition
+- duration
 # CSS Basic
-
 ## 命名
 
 - `wrapper`

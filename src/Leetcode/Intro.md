@@ -34,3 +34,12 @@
         - e.g. Empty input, input of size one, input with duplicates
     - Refactor into multiple functions
 - Step 6: Check with interviewer if you’re done
+
+
+---
+
+- 解释output的condition
+- brute force的solution
+  - 如果是两个input的参数,需要看如何在2者之间建立关系(映射, 顺序对应)
+  - 如何来用`画图`构建解决的草稿
+- 遍历(正序还是倒序)

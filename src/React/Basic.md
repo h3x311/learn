@@ -33,7 +33,7 @@
 | 该状态是否被一个或几个兄弟组件使用？                  | 是 → 将状态提升到第一个共同的父组件                 |
 |                                                      |                                                      |
 
-## Render Process
+## Render definition
 React to state changes by re-render UI😂
 
 ### 2 conditions to re-render
@@ -41,8 +41,7 @@ React to state changes by re-render UI😂
 - state update - component re-render - view re-render
 > **Virtual DOM **- cheap and fast to create multiple trees. Caused write to dom is expensive and slow, usually only small part need to update
 
-
-### Render phase
+## Render phase
 Has impact on all of its children
 - **Reconciler** - decide which DOM elements need to update
   - fiber tree(fiber for each component and DOM element)
@@ -52,26 +51,18 @@ Has impact on all of its children
 - **Asynchronous**(Can be splited into diff chunks)
   - render will not been triggered instantly, but will be scheduled when JS engine is idle 
 
-
-### Commit phase
+## Commit phase
 - **list** of DOM updates --> **Renderers**(ex: ReactDOM): write to dom --> update UI
 - commit is **synchronous**
 - after finish commit, WIP fiber tree become current fiber tree
 
-#### diff
+## diff
 - same position, different element
   - **destroy** old tree including its children
 - same position, same element
   - **更新属性**,不重新渲染DOM(element and state)
 
-### browser paint
-
-
-
-
-
-
-
+## browser paint
 
 ## Component Instance Lifecycle
 

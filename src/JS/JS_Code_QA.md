@@ -110,3 +110,113 @@ export default function curry(func) {
   };
 }
 ```
+
+## Flatten
+
+### Iterative
+```JavaScript
+export default function flatten(value: Array<ArrayValue>): Array<any> {
+  const res = [];
+  const copy = value.slice();
+
+  while (copy.length) {
+    const item = copy.shift();
+    if (Array.isArray(item)) {
+      copy.unshift(...item);
+    } else {
+      res.push(item);
+    }
+  }
+  return res;
+}
+```
+### Iterative with `some`
+```JavaScript
+export default function flatten(value: Array<ArrayValue>): Array<any> {
+  while (value.some(Array.isArray)) {
+    value = [].concat(...value);
+  }
+
+  return value;
+}
+```
+
+### Recursive(risk overflowing the call stack)
+```JavaScript
+export default function flatten(value) {
+  return value.reduce(
+    (acc, curr) => acc.concat(Array.isArray(curr) ? flatten(curr) : curr),
+    [],
+  );
+}
+```
+
+### flat array in place(mutate array)
+```JavaScript
+export default function flatten(value: Array<ArrayValue>): Array<any> {
+  for (let i = 0; i < value.length; ) {
+    if (Array.isArray(value[i])) {
+      value.splice(i, 1, ...value[i]);
+    } else {
+      i++;
+    }
+  }
+
+  return value;
+}
+```
+
+### Recursive `flatMap`
+```JavaScript
+export default function flatten(value: Array<ArrayValue>): Array<any> {
+  return Array.isArray(value) ? value.flatMap((item) => flatten(item)) : value;
+}
+```
+
+### Generator
+```JavaScript
+export default function* flatten(value: Array<any>): Array<any> {
+  for (const item of value) {
+    if (Array.isArray(item)) {
+      yield* flatten(item);
+    } else {
+      yield item;
+    }
+  }
+}
+```
+
+## mutate array
+pop, push, reverse, shift, sort, splice, unshift, copyWithin and fill.
+
+## getElementsByClassName
+```JavaScript
+function isSubset(a, b) {
+  return Array.from(a).every((value) => b.contains(value));
+}
+
+export default function getElementsByClassName(element, classNames) {
+  const elements = [];
+  const classNamesSet = new Set(classNames.trim().split(/\s+/));
+
+  function traverse(el) {
+    if (el == null) {
+      return;
+    }
+
+    if (isSubset(classNamesSet, el.classList)) {
+      elements.push(el);
+    }
+
+    for (const child of el.children) {
+      traverse(child);
+    }
+  }
+
+  for (const child of element.children) {
+    traverse(child);
+  }
+
+  return elements;
+}
+```

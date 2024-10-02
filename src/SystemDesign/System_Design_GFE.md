@@ -2,17 +2,20 @@
 
 ## Requirements Exploration
 ### functional requirements(core features)
-
+-  Basic requirements of the product
 ### non-functional requirements
 - What kind of results should be supported?
     - images
     - text
     - media(images with text)
-- What devices?
+- What devices/platforms (desktop/tablet/mobile) need to be supported?
+- Is offline support necessary?
+- Who are the main users of the product?
+- What are the performance requirements, if any? (Performance requirements typically fall under non-functional requirements.)
 
 ## Architecture
 ### server
-- Provides HTTP APIs to fetch data
+- Serves data and Provides HTTP APIs to fetch data
 ### Controller
 - Controls the flow of data within the application and makes network requests to the server.
 
@@ -32,6 +35,9 @@ handle user input and pass to controller
 
 #### Normalized Store
 
+## Flux
+
+Action -> Dispatcher -> Store -> View
 
 ## Rendering approach
 - Server-side rendering (SSR)
@@ -115,6 +121,11 @@ network only”、“network and cache”、“cache only
 - image loading based on device screen size, use `srcset`
 - `Adaptive image` loading based on network speed
 
+## Image Background
+- [image-background](https://developer.mozilla.org/en-US/docs/Web/CSS/background-size)
+- `Contain`：在不裁剪或拉伸图像的情况下，将图像缩放到其容器内尽可能大的尺寸。如果容器大于图像，这将导致图像平铺，除非将背景重复属性设置为不重复。
+- `Cover`：缩放图像（同时保持其比例）到填满容器所需的最小尺寸（即：高度和宽度完全覆盖容器），没有空白空间。如果背景的比例与元素不同，则图像会在垂直或水平方向上被裁剪。
+- `object-fit`: 
 ## Performance
 
 - loading speed
@@ -146,12 +157,13 @@ network only”、“network and cache”、“cache only
     - Dynamic number of results depending on viewport window size, but this is better implemented in userland instead.
     - Set helpful attributes for mobile: autocapitalize="off", autocomplete="off", autocorrect="off", spellcheck="false" so that the browser suggestions do not interfere with the user's search.
 - keyboard friendly
-## Accessibility screen readers
+## Accessibility(a11y)
 - Use `semantic elements` where possible: headings, buttons, links, inputs instead of styled <div>s.
 - use `img` with `alt`
 - role
-- aria-label
+- `aria-label`
 - aria-labelledby
+- tabindex
 - `<input>s` are linked to their error messages via aria-describedby and error messages are announced with aria-live="assertive"
 - Use `<input>s` of the correct types and appropriate validation-related attributes like pattern, minlength, maxlength.
 
@@ -159,7 +171,7 @@ network only”、“network and cache”、“cache only
 - Use HTTPS so that all communication with the server is encrypted and that other users on the same Wi-FI network cannot intercept and obtain any sensitive details.
 - Payment details submission API should not be using HTTP GET because the sensitive details will be included as a query string in the request URL which will get added to the browsing history which is potentially unsafe if the browser is shared by other users. Use HTTP POST or PUT instead.
 
-## i8n
+## Internationalization(i18n)
 - Have pages translated in the supported languages.
     - Set the lang attribute on the html tag (e.g. <html lang="zh-cn">) to tell browsers and search engines the language of the page which helps browsers offer a translation of the page.
 
