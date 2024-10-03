@@ -82,7 +82,6 @@ Action -> Dispatcher -> Store -> View
 ## Optimizations - General
 ### code splitting JavaScript by routes/pages
 - Split content into separate sections and prioritize above-the-fold content while lazy loading below-the-fold content.
-- Split content into separate sections and prioritize above-the-fold content while lazy loading below-the-fold content.
 - Defer loading of non-critical JavaScript (e.g. code needed to show modals, dialogs, etc.).
 - Prefetch JavaScript and data needed for the next page upon hover of links/buttons.
 

@@ -1039,7 +1039,8 @@ JS 问题（初级到高级）：</p>
 <li>local state vs global state
 <ul>
 <li>local state: component instance</li>
-<li>global state: context</li>
+<li>global state: context
+<img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/77IXiAtest.png" alt="77IXiAtest" /></li>
 </ul>
 </li>
 </ul>
@@ -1188,18 +1189,39 @@ Need a clean up function?</p>
 <p>返回一个可变的 ref 对象，其 <code>current</code> 属性被初始化为传入的参数（initial value）。返回的 ref 对象在组件的整个生命周期内保持不变。</p>
 </blockquote>
 <ul>
-<li><code>const inputRef = useRef&lt;HTMLInputElement&gt;([]);</code></li>
-<li>Input
+<li>
+<p><code>const inputRef = useRef&lt;HTMLInputElement&gt;([]);</code></p>
+</li>
+<li>
+<p>Input</p>
 <ul>
 <li><code>ref={(el) =&gt; inputRef.current = el}</code></li>
 </ul>
 </li>
-<li>focus
+<li>
+<p>focus</p>
 <ul>
 <li><code>inputRef.current[index].focus()</code></li>
 </ul>
 </li>
+<li>
+<p>Creating a variable that stays the same between renders (e.g. previous state, setTimeout id, etc.)</p>
+</li>
+<li>
+<p>Selecting and storing DOM elements</p>
+</li>
+<li>
+<p>Refs are for data that is NOT rendered: usually only appear in event handlers or effects, not in JSX (otherwise use state)
+<img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/6euXnltest.png" alt="6euXnltest" /></p>
+</li>
 </ul>
+<h2 id="usecontext"><a class="header" href="#usecontext">useContext</a></h2>
+<ul>
+<li>provider: given children access to context value</li>
+<li>value: context value</li>
+<li>useContext: consume context value</li>
+</ul>
+<p>value updated -&gt; consumers re-render</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="api-call-in-react"><a class="header" href="#api-call-in-react">API Call in React</a></h1>
 <ul>
 <li>async function</li>
@@ -1640,6 +1662,21 @@ export default function getElementsByClassName(element, classNames) {
   }
 
   return elements;
+}
+</code></pre>
+<h2 id="deep-clone"><a class="header" href="#deep-clone">Deep Clone</a></h2>
+<pre><code class="language-JavaScript">export default function deepClone(value) {
+  if (typeof value !== 'object' || value === null) {
+    return value;
+  }
+
+  if (Array.isArray(value)) {
+    return value.map((item) =&gt; deepClone(item));
+  }
+
+  return Object.fromEntries(
+    Object.entries(value).map(([key, value]) =&gt; [key, deepClone(value)]),
+  );
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="javascript"><a class="header" href="#javascript">JavaScript</a></h1>
@@ -2411,7 +2448,6 @@ const username = formData.get('username')
 <h2 id="optimizations---general"><a class="header" href="#optimizations---general">Optimizations - General</a></h2>
 <h3 id="code-splitting-javascript-by-routespages"><a class="header" href="#code-splitting-javascript-by-routespages">code splitting JavaScript by routes/pages</a></h3>
 <ul>
-<li>Split content into separate sections and prioritize above-the-fold content while lazy loading below-the-fold content.</li>
 <li>Split content into separate sections and prioritize above-the-fold content while lazy loading below-the-fold content.</li>
 <li>Defer loading of non-critical JavaScript (e.g. code needed to show modals, dialogs, etc.).</li>
 <li>Prefetch JavaScript and data needed for the next page upon hover of links/buttons.</li>

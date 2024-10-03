@@ -67,3 +67,15 @@ const generateId = (() => {
   - `ref={(el) => inputRef.current = el}`
 - focus
   - `inputRef.current[index].focus()`
+
+- Creating a variable that stays the same between renders (e.g. previous state, setTimeout id, etc.)
+- Selecting and storing DOM elements
+- Refs are for data that is NOT rendered: usually only appear in event handlers or effects, not in JSX (otherwise use state)
+![6euXnltest](https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/6euXnltest.png)
+
+## useContext
+- provider: given children access to context value
+- value: context value
+- useContext: consume context value
+
+value updated -> consumers re-render

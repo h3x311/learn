@@ -211,18 +211,39 @@ Need a clean up function?</p>
 <p>返回一个可变的 ref 对象，其 <code>current</code> 属性被初始化为传入的参数（initial value）。返回的 ref 对象在组件的整个生命周期内保持不变。</p>
 </blockquote>
 <ul>
-<li><code>const inputRef = useRef&lt;HTMLInputElement&gt;([]);</code></li>
-<li>Input
+<li>
+<p><code>const inputRef = useRef&lt;HTMLInputElement&gt;([]);</code></p>
+</li>
+<li>
+<p>Input</p>
 <ul>
 <li><code>ref={(el) =&gt; inputRef.current = el}</code></li>
 </ul>
 </li>
-<li>focus
+<li>
+<p>focus</p>
 <ul>
 <li><code>inputRef.current[index].focus()</code></li>
 </ul>
 </li>
+<li>
+<p>Creating a variable that stays the same between renders (e.g. previous state, setTimeout id, etc.)</p>
+</li>
+<li>
+<p>Selecting and storing DOM elements</p>
+</li>
+<li>
+<p>Refs are for data that is NOT rendered: usually only appear in event handlers or effects, not in JSX (otherwise use state)
+<img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/6euXnltest.png" alt="6euXnltest" /></p>
+</li>
 </ul>
+<h2 id="usecontext"><a class="header" href="#usecontext">useContext</a></h2>
+<ul>
+<li>provider: given children access to context value</li>
+<li>value: context value</li>
+<li>useContext: consume context value</li>
+</ul>
+<p>value updated -&gt; consumers re-render</p>
 
                     </main>
 

@@ -15,6 +15,7 @@
 - local state vs global state
   - local state: component instance
   - global state: context
+  ![77IXiAtest](https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/77IXiAtest.png)
 
 | **条件**                                             | **结果**                                             |
 |------------------------------------------------------|------------------------------------------------------|
