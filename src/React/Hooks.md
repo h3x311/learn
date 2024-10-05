@@ -79,3 +79,10 @@ const generateId = (() => {
 - useContext: consume context value
 
 value updated -> consumers re-render
+
+## useReducer
+![jq9Vyqtest](https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/jq9Vyqtest.png)
+
+## Redux
+
+- used in lots of UI state global management
