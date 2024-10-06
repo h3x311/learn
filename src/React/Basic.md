@@ -71,3 +71,12 @@ Has impact on all of its children
 - Updating(state/props/parent rerenders/context update)
 - Unmounting(remove component)
 ![4pc0dQtest](https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/4pc0dQtest.png)
+
+## optimize
+- separate non-state component and stateful component to avoid unnecessary re-render
+- child as `children` instead of `props` to avoid unnecessary re-render
+
+## useMemo()
+
+- Only makes sense when the component is heavy (slow rendering), re-renders often, and does so with the same props
+- As a props of parent component, in case to avoid unnecessary re-render, we could memo this component, only when its props change, it will re-render

@@ -63,10 +63,9 @@
 - [dropdown](./SystemDesign/dropdown.md)
 # Interview
 
-- [BQDB](./Interview/bqBQ.md)
 - [Assignment](./Interview/assignment.md)
 - [Problem](./Interview/problem.md)
-- [Behavior](./Interview/BQ.md)
+- [General BQ QA](./Interview/BQ-General-QA.md)
 - [Apply Record](./Interview/job/applyRecord.md)
 - [Resume Record](./Interview/job/resumeRecord.md)
 - [Prepare Record](./Interview/job/prepareRecord.md)

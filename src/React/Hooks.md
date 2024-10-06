@@ -86,3 +86,11 @@ value updated -> consumers re-render
 ## Redux
 
 - used in lots of UI state global management
+
+### thunk 
+
+- middleware between dispatch and reducer
+
+## Redux Toolkit
+
+
