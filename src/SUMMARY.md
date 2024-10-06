@@ -48,27 +48,22 @@
 - [DOM](./JS/dom.md)
 - [Array](./JS/Array.md)
 
-
-
 # System Design
 - [System_Design_GFE](./SystemDesign/System_Design_GFE.md)
 - [System_Design_BE](./SystemDesign/BE.md)
-- [optimization](./SystemDesign/optimization.md)
 - [conclusion](./SystemDesign/conclusion.md)
 - [feeds](./SystemDesign/feeds.md)
-- [instagram](./SystemDesign/instagram.md)
 - [aws](./SystemDesign/aws.md)
 - [chat](./SystemDesign/chat.md)
 - [imageCarousel](./SystemDesign/imageCarousel.md)
-- [dropdown](./SystemDesign/dropdown.md)
 # Interview
 
-- [Assignment](./Interview/assignment.md)
 - [Problem](./Interview/problem.md)
 - [General BQ QA](./Interview/BQ-General-QA.md)
+- [HR Common QA](./Interview/HR-common-QA.md)
 - [Apply Record](./Interview/job/applyRecord.md)
-- [Resume Record](./Interview/job/resumeRecord.md)
 - [Prepare Record](./Interview/job/prepareRecord.md)
+- [Interview Record](./Interview/job/interviewRecord.md)
 - [Behavior Mock](./Interview/mock/bq_mock.md)
 
 # DevOps
@@ -78,7 +73,6 @@
 # NextJs
 
 - [Basic](./Nextjs/basic.md)
-
 
 
 # TypeScript

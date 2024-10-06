@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>HR Common QA - Dot is learning</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../theme/pagetoc.css">
+        <link rel="stylesheet" href="../theme/css/fonts.css">
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../index.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">LeetCode</li><li class="chapter-item expanded "><a href="../Leetcode/Basic.html"><strong aria-hidden="true">1.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../Leetcode/string.html"><strong aria-hidden="true">2.</strong> String</a></li><li class="chapter-item expanded "><a href="../Leetcode/Array.html"><strong aria-hidden="true">3.</strong> Array</a></li><li class="chapter-item expanded "><a href="../Leetcode/TwoPointer.html"><strong aria-hidden="true">4.</strong> Two Pointer</a></li><li class="chapter-item expanded "><a href="../Leetcode/SlideWindow.html"><strong aria-hidden="true">5.</strong> Slide Window</a></li><li class="chapter-item expanded "><a href="../Leetcode/Matrix.html"><strong aria-hidden="true">6.</strong> Matrix</a></li><li class="chapter-item expanded "><a href="../Leetcode/Hashmap.html"><strong aria-hidden="true">7.</strong> Hashmap</a></li><li class="chapter-item expanded "><a href="../Leetcode/Interval.html"><strong aria-hidden="true">8.</strong> Interval</a></li><li class="chapter-item expanded "><a href="../Leetcode/Stack.html"><strong aria-hidden="true">9.</strong> Stack</a></li><li class="chapter-item expanded "><a href="../Leetcode/LinkedList.html"><strong aria-hidden="true">10.</strong> LinkedList</a></li><li class="chapter-item expanded "><a href="../Leetcode/Tree.html"><strong aria-hidden="true">11.</strong> Tree</a></li><li class="chapter-item expanded "><a href="../Leetcode/Graph.html"><strong aria-hidden="true">12.</strong> Graph</a></li><li class="chapter-item expanded "><a href="../Leetcode/BinarySearch.html"><strong aria-hidden="true">13.</strong> Binary Search</a></li><li class="chapter-item expanded "><a href="../Leetcode/Heap.html"><strong aria-hidden="true">14.</strong> Heap</a></li><li class="chapter-item expanded "><a href="../Leetcode/DP.html"><strong aria-hidden="true">15.</strong> DP</a></li><li class="chapter-item expanded affix "><li class="part-title">React</li><li class="chapter-item expanded "><a href="../React/React_Code_QA.html"><strong aria-hidden="true">16.</strong> React_Code_QA</a></li><li class="chapter-item expanded "><a href="../React/quiz.html"><strong aria-hidden="true">17.</strong> Quiz</a></li><li class="chapter-item expanded "><a href="../React/Intro.html"><strong aria-hidden="true">18.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../React/Basic.html"><strong aria-hidden="true">19.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../React/Design.html"><strong aria-hidden="true">20.</strong> Design</a></li><li class="chapter-item expanded "><a href="../React/Hooks.html"><strong aria-hidden="true">21.</strong> Hooks</a></li><li class="chapter-item expanded "><a href="../React/API.html"><strong aria-hidden="true">22.</strong> API</a></li><li class="chapter-item expanded "><a href="../React/Redux.html"><strong aria-hidden="true">23.</strong> Redux</a></li><li class="chapter-item expanded "><a href="../React/UI.html"><strong aria-hidden="true">24.</strong> UI</a></li><li class="chapter-item expanded "><a href="../React/CSS.html"><strong aria-hidden="true">25.</strong> CSS</a></li><li class="chapter-item expanded "><a href="../React/Other.html"><strong aria-hidden="true">26.</strong> Other</a></li><li class="chapter-item expanded affix "><li class="part-title">JavaScript</li><li class="chapter-item expanded "><a href="../JS/JS_Code_QA.html"><strong aria-hidden="true">27.</strong> JS_Code_QA</a></li><li class="chapter-item expanded "><a href="../JS/Intro.html"><strong aria-hidden="true">28.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../JS/Basic.html"><strong aria-hidden="true">29.</strong> Basic</a></li><li class="chapter-item expanded "><a href="../JS/Type.html"><strong aria-hidden="true">30.</strong> Type</a></li><li class="chapter-item expanded "><a href="../JS/scope.html"><strong aria-hidden="true">31.</strong> Scope</a></li><li class="chapter-item expanded "><a href="../JS/Function.html"><strong aria-hidden="true">32.</strong> Function</a></li><li class="chapter-item expanded "><a href="../JS/Object.html"><strong aria-hidden="true">33.</strong> Object</a></li><li class="chapter-item expanded "><a href="../JS/async.html"><strong aria-hidden="true">34.</strong> Async</a></li><li class="chapter-item expanded "><a href="../JS/MapSet.html"><strong aria-hidden="true">35.</strong> MapSet</a></li><li class="chapter-item expanded "><a href="../JS/dom.html"><strong aria-hidden="true">36.</strong> DOM</a></li><li class="chapter-item expanded "><a href="../JS/Array.html"><strong aria-hidden="true">37.</strong> Array</a></li><li class="chapter-item expanded affix "><li class="part-title">System Design</li><li class="chapter-item expanded "><a href="../SystemDesign/System_Design_GFE.html"><strong aria-hidden="true">38.</strong> System_Design_GFE</a></li><li class="chapter-item expanded "><a href="../SystemDesign/BE.html"><strong aria-hidden="true">39.</strong> System_Design_BE</a></li><li class="chapter-item expanded "><a href="../SystemDesign/conclusion.html"><strong aria-hidden="true">40.</strong> conclusion</a></li><li class="chapter-item expanded "><a href="../SystemDesign/feeds.html"><strong aria-hidden="true">41.</strong> feeds</a></li><li class="chapter-item expanded "><a href="../SystemDesign/aws.html"><strong aria-hidden="true">42.</strong> aws</a></li><li class="chapter-item expanded "><a href="../SystemDesign/chat.html"><strong aria-hidden="true">43.</strong> chat</a></li><li class="chapter-item expanded "><a href="../SystemDesign/imageCarousel.html"><strong aria-hidden="true">44.</strong> imageCarousel</a></li><li class="chapter-item expanded affix "><li class="part-title">Interview</li><li class="chapter-item expanded "><a href="../Interview/problem.html"><strong aria-hidden="true">45.</strong> Problem</a></li><li class="chapter-item expanded "><a href="../Interview/BQ-General-QA.html"><strong aria-hidden="true">46.</strong> General BQ QA</a></li><li class="chapter-item expanded "><a href="../Interview/HR-common-QA.html" class="active"><strong aria-hidden="true">47.</strong> HR Common QA</a></li><li class="chapter-item expanded "><a href="../Interview/job/applyRecord.html"><strong aria-hidden="true">48.</strong> Apply Record</a></li><li class="chapter-item expanded "><a href="../Interview/job/prepareRecord.html"><strong aria-hidden="true">49.</strong> Prepare Record</a></li><li class="chapter-item expanded "><a href="../Interview/job/interviewRecord.html"><strong aria-hidden="true">50.</strong> Interview Record</a></li><li class="chapter-item expanded "><a href="../Interview/mock/bq_mock.html"><strong aria-hidden="true">51.</strong> Behavior Mock</a></li><li class="chapter-item expanded affix "><li class="part-title">DevOps</li><li class="chapter-item expanded "><a href="../devops/CICD.html"><strong aria-hidden="true">52.</strong> CICD</a></li><li class="chapter-item expanded affix "><li class="part-title">NextJs</li><li class="chapter-item expanded "><a href="../Nextjs/basic.html"><strong aria-hidden="true">53.</strong> Basic</a></li><li class="chapter-item expanded affix "><li class="part-title">TypeScript</li><li class="chapter-item expanded affix "><li class="part-title">Haskell</li><li class="chapter-item expanded "><a href="../Haskell/Intro.html"><strong aria-hidden="true">54.</strong> Intro</a></li><li class="chapter-item expanded "><a href="../Haskell/Sokoban.html"><strong aria-hidden="true">55.</strong> Sokoban</a></li><li class="chapter-item expanded affix "><li class="part-title">Category Theory</li><li class="chapter-item expanded "><a href="../category/2.1Monomorphisms.html"><strong aria-hidden="true">56.</strong> 2.1 Monomorphisms</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+           
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Dot is learning</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="hrbq"><a class="header" href="#hrbq">HRBQ</a></h1>
+<h2 id="introduce-yourself"><a class="header" href="#introduce-yourself">Introduce Yourself</a></h2>
+<p>Hi, My name is dot, I'm a web developer with a degree of computer science. I'd love to create beautiful performant products that offer delightful user experiences. </p>
+<p>I previously worked at autodesk, where I contributed a lot of frontend projects with my ex colleges. </p>
+<p>For example, I created a inventor dashboard which could show the builds details. this help infrastructure team to easily monitor the build status and improve the stability and performance. it also save a lot of time for the developers to find the root cause of the issue. </p>
+<p>I also enjoy learning new tech stuff, 
+for example, I used nextjs and nodejs to build a social application named echo. And I also used react to create a Frontend movie application name movie4fun which is inspired by imdb.</p>
+<p>(worked on some personal side projects when I have free time, such as echo and movie4fun.) besides that
+As for skill, I have strong experience with javasciprt, typescript, react and redux. </p>
+<p>and it's where I think I'll really be able to help you guys achieve your goal of your product. Thanks for the opportunity of interview.</p>
+<p>&quot;...and that's what brings me here today, and why I'm excited to learn more about THIS opportunity.&quot;</p>
+<h2 id="why-hire"><a class="header" href="#why-hire">why hire</a></h2>
+<ul>
+<li>Im glad u asked me that question, as I understand it, you're looking for someone who: 
+<ul>
+<li>4 years of exp</li>
+<li>degree </li>
+<li>react - 4years built projects</li>
+<li>passionate to learn positively</li>
+</ul>
+</li>
+</ul>
+<h2 id="future-plan"><a class="header" href="#future-plan">Future Plan</a></h2>
+<ul>
+<li>
+<p>I expect to be advancing based on my job performance, and likely taking some new responsibilities</p>
+</li>
+<li>
+<p>Do you mind me asking where you see this organization going in the future?&quot;</p>
+</li>
+<li>
+<p>reveal yourself</p>
+</li>
+<li>
+<p>Does that fit in with what you're looking for?</p>
+</li>
+</ul>
+<h2 id="i-wanna-tell-u-something-very-important-结束语"><a class="header" href="#i-wanna-tell-u-something-very-important-结束语">I wanna tell u something very important 结束语</a></h2>
+<p>listen I wanna tell u something very important, and I want to make sure you are listening, are you listening?</p>
+<ul>
+<li>Ok, I want this job. im very suited, </li>
+<li>I'm very suited for what you are looking for here. </li>
+<li>I'm very passionate about doing this kind of work, this is a tremendous opportunity for me, </li>
+<li>so I just want you to know that I really want this job</li>
+</ul>
+<p><strong>thank you very much for giving me this opportunity you know i'm just glad to be here you know that</strong></p>
+<h2 id="expected-salary"><a class="header" href="#expected-salary">expected salary</a></h2>
+<p>Well, I would really need more details about the job expectations before I could answer that.</p>
+<ul>
+<li>like official job hours, overtime, shift work travel requirements break beneifts, flex time</li>
+</ul>
+<p>&quot;Can I ask what the approved salary range is for this position?&quot;</p>
+<ul>
+<li>I understand this is approved positon, so the salary must be approved, Can I ask whats range of it</li>
+</ul>
+<p>it works for me</p>
+<p>Wide salary range: 30k - 40k depends on details</p>
+<h2 id="current-salary"><a class="header" href="#current-salary">current salary</a></h2>
+<p>I have a personal policy of not disclosing that information because it's confidential and private and there are potentially privacy issues here so I'm sure you understand</p>
+<p>thats why Im hoping u'll select me there. </p>
+<h2 id="what-are-your-strengths"><a class="header" href="#what-are-your-strengths">what are your strengths</a></h2>
+<p>strengths are that:</p>
+<ul>
+<li>i have more than 4 years in a similar role right </li>
+<li>i have this particular educational qualification (computer science degree)</li>
+<li>and i do have experience using these particular tools (react, js, nodejs)</li>
+<li>those are my strengths </li>
+</ul>
+<p>now when you say this the interviewers are thinking oh okay this is stuff that they were looking for</p>
+<p><img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/95dUkRtest.jpg" alt="95dUkRtest" /></p>
+<h2 id="what-are-your-weaknesses"><a class="header" href="#what-are-your-weaknesses">what are your weaknesses</a></h2>
+<p>well I have really high standard, </p>
+<p>unfortunately not everyone shares those standards which can sometimes lead to a bit of frustration </p>
+<p>what I found is with a little bit of good communication I can smoothly avoid those problems</p>
+<ul>
+<li>I do</li>
+<li>but it can lead do </li>
+<li>but then I do </li>
+<li>fix it</li>
+</ul>
+<h2 id="why-u-leave-last-job---why-didnt-like-your-previous-company"><a class="header" href="#why-u-leave-last-job---why-didnt-like-your-previous-company">why u leave last job? - why didn't like your previous company?</a></h2>
+<ul>
+<li>opportunities challenge</li>
+<li>role changed</li>
+</ul>
+<h2 id="reverse-qa"><a class="header" href="#reverse-qa">reverse QA</a></h2>
+<ul>
+<li>&quot;Can you describe the types of people that are generally successful in this role?&quot;</li>
+<li>&quot;What do you enjoy most about working at this company?&quot;</li>
+<li>&quot;If I was in this role, what would be your expectations for me for the first 30/60/90 days?&quot;</li>
+<li>&quot;If you were the CEO of this company, what would you change?&quot;</li>
+<li>&quot;Can you describe a typical day for someone in this role?&quot;</li>
+<li>&quot;Have you seen anything in other candidates, That you haven't yet seen in me, That I could perhaps speak to?&quot;</li>
+<li>Where do we go from here?</li>
+<li>Thank you note - same day
+Thanks for the opportunity to interview.</li>
+<li><strong>thank you very much for giving me this opportunity you know i'm just glad to be here you know that</strong></li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/h3x311/upic@main/LC3/2024/qSfhnvtest.png" alt="qSfhnvtest" /></p>
+<h2 id="stress"><a class="header" href="#stress">stress</a></h2>
+<ul>
+<li>Actually I handle it very well</li>
+<li>A certain amount of stress is sometimes unavoidable, But, it's never been a problem for me in the past.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../Interview/BQ-General-QA.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../Interview/job/applyRecord.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../Interview/BQ-General-QA.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../Interview/job/applyRecord.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="../theme/pagetoc.js"></script>
+
+
+    </body>
+</html>
